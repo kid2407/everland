@@ -60,7 +60,7 @@ body {
 }
 
 .padding {
-    padding: 10px;
+    padding: 0 10px 10px 10px;
 }
 
 hr {
@@ -141,8 +141,9 @@ div.navbar li.dropdown > a + ul {
 
 
 div.navbar li.dropdown:hover > a + ul {
-    display: block;
-    width:   100%;
+    display:    block;
+    width:      100%;
+    margin-top: -10px;
 }
 
 div.navbar li.dropdown > a + ul > li:hover > a, div.navbar li.dropdown > a + ul > li > a.current_page {

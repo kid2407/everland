@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="de">
+<html lang="de">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,38 +8,35 @@
 
     <link rel="icon" href="/favicon.ico" sizes="any">
     <meta name="theme-color" content="#fafafa">
+    <script type="application/javascript" src="/everland/assets/js/everland.js?ts=20260814"></script>
 </head>
 
 <body>
-<div class="container">
-    <img id="banner" src="/everland/assets/img/banner_final.png">
-</div>
+<img id="banner" src="https://placehold.co/1920x250/dab4bf/FFFFFF.png?text=Everland\n+A+World+Beyond+(Banner)&font=poppins">
 <div class="navbar">
-    <div class="container">
-        <ul class="inline">
-            <li><a href="/">Übersicht</a></li>
-            <li><a href="/everland/pages/access/">Anreise</a></li>
-            <li class="dropdown">
-                <a href="#">Festival-Guide</a>
-                <ul>
-                    <li><a href="/everland/pages/guide/map/">Lageplan</a></li>
-                    <li><a href="/everland/pages/guide/faq/">FAQ</a></li>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a href="#">Programm</a>
-                <ul>
-                    <li><a href="/everland/pages/program/timetable/">Timetable</a></li>
-                    <li><a href="/everland/pages/program/dj/">DJs</a></li>
-                    <li><a href="/everland/pages/program/live/">Live-Acts</a></li>
-                    <li><a href="/everland/pages/program/activities/">Activities</a></li>
-                    <li><a href="/everland/pages/program/popup/">Pop-Up-Store</a></li>
-                </ul>
-            </li>
-            <li><a href="/everland/pages/sponsors/">Sponsoren</a></li>
-            <li><a class="current_page" href="/everland/pages/team/">Team</a></li>
-        </ul>
-    </div>
+    <ul class="inline">
+        <li><a class="frontpage" href="/everland/">Übersicht</a></li>
+        <li><a  class="tickets" href="/everland/pages/tickets/">Tickets</a></li>
+        <li class="dropdown">
+            <a class="map access faq" href="#">Festival-Guide</a>
+            <ul>
+                <li><a class="map" href="/everland/pages/guide/map/">Lageplan</a></li>
+                <li><a class="access" href="/everland/pages/access/">Anreise</a></li>
+                <li><a class="faq" href="/everland/pages/guide/faq/">FAQ</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a class="timetable dj live activities" href="#">Programm</a>
+            <ul>
+                <li><a class="timetable" href="/everland/pages/program/timetable/">Timetable</a></li>
+                <li><a class="dj" href="/everland/pages/program/dj/">Übersicht: DJs</a></li>
+                <li><a class="live" href="/everland/pages/program/live/">Übersicht: Live-Acts</a></li>
+                <li><a class="activities" href="/everland/pages/program/activities/">Activities</a></li>
+            </ul>
+        </li>
+        <li><a class="sponsors" href="/everland/pages/sponsors/">Sponsoren</a></li>
+        <li><a class="team" href="/everland/pages/team/">Team</a></li>
+    </ul>
 </div>
 <div class="clear"></div>
 <div class="container" id="mainContainer">
@@ -54,4 +51,7 @@
     </div>
 </div>
 </body>
+<script type="application/javascript">
+    markCurrentPage("team")
+</script>
 </html>
