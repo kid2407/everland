@@ -13,6 +13,7 @@
     --gold:           #c79a4b;
     --gold-light:     #e3c785;
     --shadow:         0 18px 40px -18px rgba(30, 20, 10, 0.35);
+    --header-height:  88px;
 }
 
 * {
@@ -62,6 +63,12 @@ img {
     max-width: 1180px;
     margin:    0 auto;
     padding:   0 28px;
+}
+
+.wrap.center > p {
+    color:      #d9cbe8;
+    margin:     0 auto;
+    text-align: center;
 }
 
 .eyebrow {
@@ -179,30 +186,18 @@ header.site-nav.scrolled {
 }
 
 .logo {
-    font-family:    Georgia, 'Palatino Linotype', serif;
-    letter-spacing: 1px;
-    font-weight:    700;
-    font-size:      1.5rem;
-    color:          var(--gold-light);
-    display:        flex;
-    flex-direction: column;
-    align-items:    flex-start;
-    line-height:    1;
-    cursor:         pointer;
-    background:     none;
-    border:         none;
-    padding:        0;
-    margin:         0;
-    text-align:     left;
+    display:           block;
+    height:            61px;
+    width:             200px;
+    margin-top:        -5px;
+    background-image:  url("/everland/assets/img/everland_logo_breit_minimal.png");
+    background-size:   130px 55px;
+    background-repeat: no-repeat;
+    cursor:            pointer;
 }
 
-.logo span {
-    font-family:    Georgia, serif;
-    font-size:      .56rem;
-    letter-spacing: 3px;
-    color:          var(--cream);
-    font-weight:    500;
-    margin-top:     4px;
+.site-nav.scrolled a.logo {
+    margin-top: -5px;
 }
 
 .nav-links {
@@ -291,6 +286,13 @@ header.site-nav.scrolled {
     color:      var(--cream);
     font-size:  1.6rem;
     cursor:     pointer;
+}
+
+/* ---------- Main Container ---------- */
+
+#main > section {
+    padding-bottom: 0;
+    padding-top:    var(--header-height);
 }
 
 /* ---------- PAGES ---------- */
@@ -484,19 +486,18 @@ section {
 
 /* ---------- SIGNPOST ---------- */
 .signpost {
-    position:       fixed;
+    position:       absolute;
     left:           26px;
-    top:            50%;
-    transform:      translateY(-50%);
+    top:            130px;
     z-index:        60;
     display:        flex;
     flex-direction: column;
-    gap:            10px;
+    gap:            15px;
 }
 
 .signpost button {
     font-weight:   700;
-    font-size:     .76rem;
+    font-size:     1rem;
     color:         #fbf1de;
     background:    linear-gradient(135deg, #8a6742, #6b4d30);
     padding:       8px 16px 8px 14px;
@@ -510,7 +511,7 @@ section {
     font-family:   inherit;
     display:       block;
     text-align:    left;
-    width:         100%;
+    width:         120%;
 }
 
 .signpost button:nth-child(even) {
@@ -613,6 +614,44 @@ section {
 .info-card p {
     color:     var(--ink-soft);
     font-size: .93rem;
+}
+
+.card-grid.packlist-grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap:              14px;
+}
+
+.info-card.packlist-card {
+    padding:    16px 14px;
+    background: #3d2857fc;
+    color:      #d9cbe8;
+}
+
+.info-card.packlist-card > h3 {
+    color: var(--gold-light);
+}
+
+.info-card.packlist-card > span {
+    float:         left;
+    font-size:     1.15rem;
+    margin-bottom: 0;
+}
+
+.info-card.packlist-card ul {
+    list-style-type: none;
+    padding:         0;
+    margin:          18px 0 0;
+}
+
+.info-card.packlist-card ul > li {
+    display: flex;
+    gap:     6px;
+}
+
+.info-card.packlist-card ul > li::before {
+    content:     "✦";
+    color:       var(--gold-light);
+    flex-shrink: 0;
 }
 
 /* ---------- DARK sections (purple) ---------- */
@@ -752,8 +791,8 @@ section {
 
 .ticket-grid {
     display:              grid;
-    grid-template-columns:repeat(4, 1fr);
-    gap:                  22px;
+    grid-template-columns:repeat(5, 1fr);
+    gap:                  33px 22px;
     max-width:            1180px;
     margin:               0 auto;
 }
@@ -762,7 +801,7 @@ section {
     background:     rgba(255, 251, 240, .05);
     border:         1px solid rgba(227, 199, 133, .28);
     border-radius:  20px;
-    padding:        32px 26px;
+    padding:        32px 22px 22px;
     text-align:     center;
     position:       relative;
     transition:     transform .3s ease, border-color .3s ease;
@@ -801,14 +840,16 @@ section {
 }
 
 .ticket-card h3 {
-    font-size: 1.15rem;
-    color:     var(--gold-light);
+    font-size:     1.15rem;
+    color:         var(--gold-light);
+    height:        59px;
+    margin-bottom: 0;
 }
 
 .ticket-card ul {
     list-style: none;
     padding:    0;
-    margin:     18px 0 24px;
+    margin:     18px 0 0;
     text-align: left;
     font-size:  .88rem;
     color:      #d9cbe8;
@@ -825,6 +866,12 @@ section {
     content:     "✦";
     color:       var(--gold-light);
     flex-shrink: 0;
+}
+
+.ticket-card .priceDisplay {
+    font-size:     3rem;
+    color:         var(--gold);
+    margin-bottom: 0;
 }
 
 /* ---------- TIMETABLE ---------- */
@@ -949,9 +996,14 @@ section {
     gap:                  24px;
 }
 
+#djSpecialGrid.artist-grid, #liveSpecialGrid.artist-grid {
+    grid-template-columns: 1fr 1fr;
+    margin-bottom:         50px;
+}
+
 .artist-card {
-    background:     rgba(255, 255, 255, .05);
-    border:         1px solid rgba(227, 199, 133, .25);
+    /*background:     rgba(255, 255, 255, .05);*/
+    /*border:         1px solid rgba(227, 199, 133, .25);*/
     border-radius:  16px;
     overflow:       hidden;
     text-align:     center;
@@ -965,11 +1017,20 @@ section {
 
 .artist-photo {
     aspect-ratio:    1/1;
-    background:      linear-gradient(150deg, #3a2856, #6b3f66 60%, #9a5a5a);
     display:         flex;
     align-items:     center;
     justify-content: center;
     font-size:       2.4rem;
+}
+
+.artist-photo img.artistImage {
+    border-radius: 50%;
+    object-fit:    cover;
+    width:         calc(100% - 75px);
+}
+
+.artist-photo img.artistBorder {
+    position: absolute;
 }
 
 .artist-card h4 {
@@ -988,6 +1049,20 @@ section {
     font-size: .78rem;
     color:     #a894c4;
 }
+
+#djSpecialGrid.artist-grid .artist-card h4, #liveSpecialGrid.artist-grid .artist-card h4 {
+    font-size: 1.5rem;
+    color:     var(--gold);
+}
+
+#djSpecialGrid.artist-grid .artist-card .role, #liveSpecialGrid.artist-grid .artist-card .role {
+    font-size: 0.9rem;
+}
+
+#djSpecialGrid.artist-grid .artist-card .slot, #liveSpecialGrid.artist-grid .artist-card .slot {
+    font-size: 0.85rem;
+}
+
 
 /* ---------- LAGEPLAN ---------- */
 .map-wrap {

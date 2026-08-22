@@ -3,27 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Everland — A World Beyond</title>
+    <title>Everland &mdash; A World Beyond</title>
     <link rel="stylesheet" href="/everland/assets/css/style.css">
 </head>
 <body>
 
 <header class="site-nav" id="siteNav">
     <div class="wrap nav-inner">
-        <button class="logo" data-target="home" aria-label="Zur Übersicht">Everland<span>A WORLD BEYOND</span></button>
-        <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen" aria-expanded="false">☰</button>
+        <a class="logo" data-target="home" aria-label="Zur Übersicht"></a>
         <ul class="nav-links" id="navLinks">
             <li class="nav-item">
                 <button class="nav-link" data-target="home">Übersicht</button>
-            </li>
-            <li class="nav-item">
-                <button class="nav-link" data-target="tickets">Tickets</button>
             </li>
             <li class="nav-item" data-dropdown>
                 <button class="nav-link" data-toggle-drop>Festival-Guide <span class="caret">▾</span></button>
                 <div class="nav-drop">
                     <button data-target="lageplan">Lageplan</button>
                     <button data-target="anreise">Anreise</button>
+                    <button data-target="packliste">Packliste</button>
                     <button data-target="faq">FAQ</button>
                 </div>
             </li>
@@ -66,16 +63,16 @@
                 </g>
             </svg>
             <div class="hero-content">
-                <p class="eyebrow">25.–27. September · Insel vor Paleto</p>
+                <p class="eyebrow">18.–20. September · Insel vor Paleto</p>
                 <h1>Everland</h1>
                 <h2 class="sub">A World Beyond</h2>
-                <p class="lead">Drei Tage jenseits der bekannten Welt — Musik, Licht und Abenteuer auf einer Insel, die nur für dieses eine Wochenende erscheint.</p>
+                <p class="lead">Drei Tage jenseits der bekannten Welt &mdash; Musik, Licht und Abenteuer auf einer Insel, die nur für dieses eine Wochenende erscheint.</p>
                 <div class="hero-meta">
-                    <span>📅 25.–27. September</span>
+                    <span>📅 18.–20. September</span>
                     <span>📍 Insel vor Paleto</span>
                 </div>
                 <div class="hero-cta">
-                    <button class="btn btn-primary" data-target="tickets">Tickets ansehen 🎟</button>
+                    <button class="btn btn-primary" data-target="tickets">Zur Ticketübersicht 🎟</button>
                     <button class="btn btn-ghost" data-target="timetable">Programm entdecken</button>
                 </div>
             </div>
@@ -85,32 +82,34 @@
             <div class="wrap">
                 <div class="section-head reveal">
                     <p class="eyebrow" style="justify-content:center;">Über Everland</p>
-                    <h2>Eine Welt jenseits des Festlands</h2>
-                    <p>Everland ist mehr als ein Festival — es ist eine Insel, die für drei Tage aus dem Nebel vor Paleto auftaucht.</p>
+                    <h2>Ein Blick in eine andere Welt</h2>
+                    <p>Everland ist mehr als ein Festival &mdash; es ist ein Ort voller Mystik, Magie und Musik.<br>Teil einer anderen Welt, die für drei Tage aus dem Nebel vor Paleto auftaucht.</p>
                 </div>
                 <div class="feature-grid">
                     <div class="feature-card reveal">
                         <div class="feature-icon">🏝️</div>
                         <h3>Die Insel</h3>
                         <p>Erkunde versteckte Buchten, den Lageplan und alles, was du für die Anreise wissen musst.</p>
+                        <br>
                         <button class="link" data-target="lageplan">Zum Lageplan →</button>
                     </div>
                     <div class="feature-card reveal">
                         <div class="feature-icon">🎧</div>
                         <h3>DJs &amp; Live-Acts</h3>
-                        <p>Von treibenden Beats bis zu Live-Bands — das komplette Line-up auf mehreren Bühnen.</p>
+                        <p>Von treibenden Beats bis zu Live-Bands &mdash; das komplette Line-Up auf mehreren Bühnen.</p>
                         <button class="link" data-target="timetable">Zum Timetable →</button>
                     </div>
                     <div class="feature-card reveal">
                         <div class="feature-icon">🧭</div>
                         <h3>Activities</h3>
-                        <p>Workshops, Bootstouren und Quests abseits der Hauptbühnen — für alle, die mehr entdecken wollen.</p>
+                        <p>Workshops, Quests und einzigartige Erlebnisse abseits der Hauptbühnen &mdash; für alle, die mehr entdecken wollen.</p>
                         <button class="link" data-target="activities">Activities ansehen →</button>
                     </div>
                     <div class="feature-card reveal">
                         <div class="feature-icon">🎟️</div>
                         <h3>Tickets &amp; Camping</h3>
-                        <p>Vier Pakete für jeden Anspruch — vom Zelt zu zweit bis zur exklusiven Unterkunft.</p>
+                        <p>Drei Pakete für jeden Anspruch &mdash; vom Zelt zu zweit bis zur exklusiven Unterkunft.</p>
+                        <br>
                         <button class="link" data-target="tickets">Zu den Tickets →</button>
                     </div>
                 </div>
@@ -133,26 +132,26 @@
             </div>
         </section>
 
-        <section class="gallery">
-            <div class="wrap">
-                <div class="section-head reveal">
-                    <p class="eyebrow" style="justify-content:center;color:var(--gold-light);">Galerie</p>
-                    <h2>Eindrücke aus dem Wald</h2>
-                    <p>Ein kleiner Vorgeschmack auf Everlands Nächte voller Lichter, Musik und Magie.</p>
-                </div>
-                <div class="gal-grid">
-                    <div class="gal-card gal-1 reveal">
-                        <div class="gal-caption">Das Festivalgelände bei Nacht</div>
-                    </div>
-                    <div class="gal-card gal-2 reveal">
-                        <div class="gal-caption">Feuershow am Hauptplatz</div>
-                    </div>
-                    <div class="gal-card gal-3 reveal">
-                        <div class="gal-caption">Morgenlicht über den Zelten</div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <!--        <section class="gallery">-->
+        <!--            <div class="wrap">-->
+        <!--                <div class="section-head reveal">-->
+        <!--                    <p class="eyebrow" style="justify-content:center;color:var(&#45;&#45;gold-light);">Galerie</p>-->
+        <!--                    <h2>Eindrücke aus dem Wald</h2>-->
+        <!--                    <p>Ein kleiner Vorgeschmack auf Everlands Nächte voller Lichter, Musik und Magie.</p>-->
+        <!--                </div>-->
+        <!--                <div class="gal-grid">-->
+        <!--                    <div class="gal-card gal-1 reveal">-->
+        <!--                        <div class="gal-caption">Das Festivalgelände bei Nacht</div>-->
+        <!--                    </div>-->
+        <!--                    <div class="gal-card gal-2 reveal">-->
+        <!--                        <div class="gal-caption">Feuershow am Hauptplatz</div>-->
+        <!--                    </div>-->
+        <!--                    <div class="gal-card gal-3 reveal">-->
+        <!--                        <div class="gal-caption">Morgenlicht über den Zelten</div>-->
+        <!--                    </div>-->
+        <!--                </div>-->
+        <!--            </div>-->
+        <!--        </section>-->
     </section>
 
     <nav class="signpost" aria-label="Schnellnavigation">
@@ -168,41 +167,60 @@
     <section class="page" id="page-tickets" data-page="tickets">
         <div class="page-hero"><p class="eyebrow" style="justify-content:center;color:var(--gold-light);">Tickets</p>
             <h1>Sichere dir dein Wochenende</h1>
-            <p>Vier Pakete, ein Ziel: Everland. Wähle, wie du reisen möchtest.</p></div>
+            <p>Drei Pakete, ein Ziel: Everland. Wähle, wie du reisen möchtest.</p>
+        </div>
         <section class="tickets">
             <div class="wrap">
                 <div class="ticket-grid">
                     <div class="ticket-card reveal">
                         <h3>Fairydust Package</h3>
                         <ul>
-                            <li>Wochenend-Ticket für 1 Person</li>
-                            <li>Zelt für 2 Personen</li>
+                            <li>1x Wochenend-Ticket</li>
+                            <li>1x Zelt für bis zu 2 Personen</li>
                         </ul>
+                        <p class="priceDisplay">$1.000</p>
                     </div>
                     <div class="ticket-card reveal">
                         <h3>Moonlight Package</h3>
                         <ul>
-                            <li>Wochenend-Ticket für 1 Person</li>
-                            <li>Zelt für 4 Personen</li>
+                            <li>1x Wochenend-Ticket</li>
+                            <li>1x Zelt für bis zu 4 Personen</li>
                         </ul>
+                        <p class="priceDisplay">$1.200</p>
                     </div>
                     <div class="ticket-card featured reveal">
                         <span class="tag">Premium</span>
                         <h3>Enchanted Retreat Package</h3>
                         <ul>
-                            <li>Wochenend-Ticket für 1 Person</li>
-                            <li>„Die Nuss" für 4 Personen</li>
+                            <li>1x Wochenend-Ticket</li>
+                            <li>1x „Die Nuss" für bis zu 4 Personen</li>
                         </ul>
+                        <p class="priceDisplay">$3.600</p>
+                    </div>
+                    <div class="ticket-card limited reveal">
+                        <span class="tag">Add-On</span>
+                        <h3>Wochendticket</h3>
+                        <ul>
+                            <li>1x Wochenend-Ticket</li>
+                            <li>Nur in Kombination mit einem der drei Packages!</li>
+                        </ul>
+                        <p class="priceDisplay">$600</p>
                     </div>
                     <div class="ticket-card limited reveal">
                         <span class="tag">Limitiert</span>
                         <h3>Tagesticket</h3>
                         <ul>
-                            <li>Für 1 Person</li>
-                            <li>Verfügbar je nach Lage — Venture im Auge behalten!</li>
+                            <li>1x Tages-Ticket</li>
+                            <li>Verfügbar je nach Lage<br>→ Venture im Auge behalten!</li>
+                            <li>Der Preis ist variabel und wird immer über Venture bekannt gegeben</li>
                         </ul>
+                        <p class="priceDisplay">$???</p>
                     </div>
                 </div>
+            </div>
+            <br>
+            <div class="wrap center">
+                <p>Ihr wollt Tickets? Ihr braucht mehr Details? Dann behaltet Venture und die Website im Auge.</p>
             </div>
         </section>
     </section>
@@ -211,69 +229,221 @@
     <section class="page" id="page-lageplan" data-page="lageplan">
         <div class="page-hero"><p class="eyebrow" style="justify-content:center;color:var(--gold-light);">Festival-Guide</p>
             <h1>Lageplan</h1>
-            <p>Finde dich auf der Insel zurecht, bevor du überhaupt angekommen bist.</p></div>
-        <section>
-            <div class="wrap">
-                <div class="map-wrap">
-                    <div class="map-svg-holder reveal">
-                        <svg viewBox="0 0 400 320" width="100%">
-                            <path d="M60,120 C40,80 100,40 170,45 C240,30 320,60 340,120 C360,180 320,240 250,260 C180,290 100,270 70,220 C40,190 40,150 60,120 Z" fill="#e9d9a6" stroke="#c79a4b"
-                                  stroke-width="3"/>
-                            <circle cx="200" cy="150" r="16" fill="#c15577"/>
-                            <text x="200" y="180" text-anchor="middle" fill="#1f2b1e" font-size="11" font-family="Georgia">1 Hauptbühne</text>
-                            <circle cx="130" cy="200" r="12" fill="#334a30"/>
-                            <text x="130" y="222" text-anchor="middle" fill="#1f2b1e" font-size="11" font-family="Georgia">2 Camping</text>
-                            <circle cx="270" cy="200" r="12" fill="#432c5e"/>
-                            <text x="270" y="222" text-anchor="middle" fill="#1f2b1e" font-size="11" font-family="Georgia">3 Marktplatz</text>
-                            <circle cx="90" cy="130" r="12" fill="#c79a4b"/>
-                            <text x="80" y="112" text-anchor="middle" fill="#1f2b1e" font-size="11" font-family="Georgia">4 Fähranleger</text>
-                            <circle cx="250" cy="110" r="12" fill="#8a6742"/>
-                            <text x="260" y="92" text-anchor="middle" fill="#1f2b1e" font-size="11" font-family="Georgia">5 Chill-Area</text>
-                        </svg>
-                    </div>
-                    <ul class="map-legend reveal" style="list-style:none;padding:0;">
-                        <li><span class="dot" style="background:#c15577;"></span>
-                            <div><strong>1 · Hauptbühne</strong><br>Zentrum des Festivals mit dem größten Sound- &amp; Lichtsystem.</div>
-                        </li>
-                        <li><span class="dot" style="background:#334a30;"></span>
-                            <div><strong>2 · Camping</strong><br>Zeltflächen, „Die Nuss"-Unterkünfte und Sanitärbereiche.</div>
-                        </li>
-                        <li><span class="dot" style="background:#432c5e;"></span>
-                            <div><strong>3 · Marktplatz</strong><br>Essensstände, Merch und kleine Bühnen.</div>
-                        </li>
-                        <li><span class="dot" style="background:#c79a4b;"></span>
-                            <div><strong>4 · Fähranleger</strong><br>Ankunft und Abfahrt der Boote von/nach Paleto.</div>
-                        </li>
-                        <li><span class="dot" style="background:#8a6742;"></span>
-                            <div><strong>5 · Chill-Area</strong><br>Ruhiger Rückzugsort abseits der Hauptbühne.</div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+            <p>Finde dich auf der Insel zurecht, bevor du überhaupt angekommen bist.</p>
+            <p>Bald auch mit echten Karten!</p>
+        </div>
+        <!--        <section>-->
+        <!--            <div class="wrap">-->
+        <!--                <p>Bald gibt es hier mehr zu sehen. Doch noch herrscht hier eine Leere, die gefüllt werden will.</p>-->
+        <!--                <div class="map-wrap">-->
+        <!--                    <div class="map-svg-holder reveal">-->
+        <!--                        <svg viewBox="0 0 400 320" width="100%">-->
+        <!--                            <path d="M60,120 C40,80 100,40 170,45 C240,30 320,60 340,120 C360,180 320,240 250,260 C180,290 100,270 70,220 C40,190 40,150 60,120 Z" fill="#e9d9a6" stroke="#c79a4b"-->
+        <!--                                  stroke-width="3"/>-->
+        <!--                            <circle cx="200" cy="150" r="16" fill="#c15577"/>-->
+        <!--                            <text x="200" y="180" text-anchor="middle" fill="#1f2b1e" font-size="11" font-family="Georgia">1 Hauptbühne</text>-->
+        <!--                            <circle cx="130" cy="200" r="12" fill="#334a30"/>-->
+        <!--                            <text x="130" y="222" text-anchor="middle" fill="#1f2b1e" font-size="11" font-family="Georgia">2 Camping</text>-->
+        <!--                            <circle cx="270" cy="200" r="12" fill="#432c5e"/>-->
+        <!--                            <text x="270" y="222" text-anchor="middle" fill="#1f2b1e" font-size="11" font-family="Georgia">3 Marktplatz</text>-->
+        <!--                            <circle cx="90" cy="130" r="12" fill="#c79a4b"/>-->
+        <!--                            <text x="80" y="112" text-anchor="middle" fill="#1f2b1e" font-size="11" font-family="Georgia">4 Fähranleger</text>-->
+        <!--                            <circle cx="250" cy="110" r="12" fill="#8a6742"/>-->
+        <!--                            <text x="260" y="92" text-anchor="middle" fill="#1f2b1e" font-size="11" font-family="Georgia">5 Chill-Area</text>-->
+        <!--                        </svg>-->
+        <!--                    </div>-->
+        <!--                    <ul class="map-legend reveal" style="list-style:none;padding:0;">-->
+        <!--                        <li><span class="dot" style="background:#c15577;"></span>-->
+        <!--                            <div><strong>1 · Hauptbühne</strong><br>Zentrum des Festivals mit dem größten Sound- &amp; Lichtsystem.</div>-->
+        <!--                        </li>-->
+        <!--                        <li><span class="dot" style="background:#334a30;"></span>-->
+        <!--                            <div><strong>2 · Camping</strong><br>Zeltflächen, „Die Nuss"-Unterkünfte und Sanitärbereiche.</div>-->
+        <!--                        </li>-->
+        <!--                        <li><span class="dot" style="background:#432c5e;"></span>-->
+        <!--                            <div><strong>3 · Marktplatz</strong><br>Essensstände, Merch und kleine Bühnen.</div>-->
+        <!--                        </li>-->
+        <!--                        <li><span class="dot" style="background:#c79a4b;"></span>-->
+        <!--                            <div><strong>4 · Fähranleger</strong><br>Ankunft und Abfahrt der Boote von/nach Paleto.</div>-->
+        <!--                        </li>-->
+        <!--                        <li><span class="dot" style="background:#8a6742;"></span>-->
+        <!--                            <div><strong>5 · Chill-Area</strong><br>Ruhiger Rückzugsort abseits der Hauptbühne.</div>-->
+        <!--                        </li>-->
+        <!--                    </ul>-->
+        <!--                </div>-->
+        <!--            </div>-->
+        <!--        </section>-->
     </section>
 
     <!-- ================= ANREISE ================= -->
     <section class="page" id="page-anreise" data-page="anreise">
         <div class="page-hero"><p class="eyebrow" style="justify-content:center;color:var(--gold-light);">Festival-Guide</p>
             <h1>Anreise</h1>
-            <p>Everland liegt auf einer Insel vor Paleto — die Überfahrt gehört zum Erlebnis.</p></div>
+            <p>Everland liegt auf einer Insel vor Paleto &mdash; die Überfahrt gehört zum Erlebnis.</p>
+        </div>
         <section class="info-trio">
             <div class="wrap card-grid">
                 <div class="info-card reveal">
-                    <span class="ic-icon">⛴️</span>
-                    <h3>Mit der Fähre</h3>
-                    <p>Shuttle-Boote bringen dich vom Festland-Anleger in Paleto direkt zur Insel. Ticket zeigt dir Abfahrtszeiten und Steg.</p>
+                    <span class="ic-icon">🎒</span>
+                    <h3>Gepäck &amp; Camping</h3>
+                    <p>Pro Person ist begrenztes Gepäck erlaubt &mdash; plane dein Zelt- oder „Nuss"-Equipment entsprechend deinem Package und der <a data-target="packliste"
+                                                                                                                                                      style="text-decoration: underline; cursor: pointer;">Packliste</a>.
+                    </p>
                 </div>
                 <div class="info-card reveal">
                     <span class="ic-icon">🚗</span>
-                    <h3>Anreise zum Festland</h3>
+                    <h3>Vom Festland</h3>
                     <p>Parkflächen stehen in Paleto in Laufnähe zum Fähranleger bereit. Von dort geht es zu Fuß weiter zum Boot.</p>
                 </div>
                 <div class="info-card reveal">
-                    <span class="ic-icon">🎒</span>
-                    <h3>Gepäck &amp; Camping</h3>
-                    <p>Pro Person ist begrenztes Gepäck erlaubt — plane dein Zelt- oder „Nuss"-Equipment entsprechend deinem Package.</p>
+                    <span class="ic-icon">⛴️</span>
+                    <h3>Auf die Fähre</h3>
+                    <p>Shuttle-Boote bringen dich vom Festland-Anleger in Paleto direkt zur Insel. Dein Ticket zeigt dir Abfahrtszeiten und Details.</p>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- ================= PACKLISTE ================= -->
+    <section class="page" id="page-packliste" data-page="packliste">
+        <div class="page-hero"><p class="eyebrow" style="justify-content:center;color:var(--gold-light);">Festival-Guide</p>
+            <h1>Packliste</h1>
+            <p>Everland liegt auf einer Insel &mdash; Also gut Überlegen, was man einpackt.</p>
+            <p>Wie gut, dass wir und ein paar Gedanken gemacht haben,</p>
+            <p>was man so mitnehmen solle!</p>
+        </div>
+        <section class="info-trio">
+            <div class="wrap card-grid packlist-grid">
+                <div class="info-card packlist-card reveal">
+                    <span class="ic-icon">💄</span>
+                    <h3>Kosmetik</h3>
+                    <ul>
+                        <li>Lorem</li>
+                        <li>Ipsum</li>
+                        <li>Dolor</li>
+                        <li>Sit</li>
+                        <li>Amet</li>
+                    </ul>
+                </div>
+                <div class="info-card packlist-card reveal">
+                    <span class="ic-icon">💄</span>
+                    <h3>Kosmetik</h3>
+                    <ul>
+                        <li>Lorem</li>
+                        <li>Ipsum</li>
+                        <li>Dolor</li>
+                        <li>Sit</li>
+                        <li>Amet</li>
+                    </ul>
+                </div>
+                <div class="info-card packlist-card reveal">
+                    <span class="ic-icon">💄</span>
+                    <h3>Kosmetik</h3>
+                    <ul>
+                        <li>Lorem</li>
+                        <li>Ipsum</li>
+                        <li>Dolor</li>
+                        <li>Sit</li>
+                        <li>Amet</li>
+                    </ul>
+                </div>
+                <div class="info-card packlist-card reveal">
+                    <span class="ic-icon">💄</span>
+                    <h3>Kosmetik</h3>
+                    <ul>
+                        <li>Lorem</li>
+                        <li>Ipsum</li>
+                        <li>Dolor</li>
+                        <li>Sit</li>
+                        <li>Amet</li>
+                    </ul>
+                </div>
+                <div class="info-card packlist-card reveal">
+                    <span class="ic-icon">💄</span>
+                    <h3>Kosmetik</h3>
+                    <ul>
+                        <li>Lorem</li>
+                        <li>Ipsum</li>
+                        <li>Dolor</li>
+                        <li>Sit</li>
+                        <li>Amet</li>
+                    </ul>
+                </div>
+                <div class="info-card packlist-card reveal">
+                    <span class="ic-icon">💄</span>
+                    <h3>Kosmetik</h3>
+                    <ul>
+                        <li>Lorem</li>
+                        <li>Ipsum</li>
+                        <li>Dolor</li>
+                        <li>Sit</li>
+                        <li>Amet</li>
+                    </ul>
+                </div>
+                <div class="info-card packlist-card reveal">
+                    <span class="ic-icon">💄</span>
+                    <h3>Kosmetik</h3>
+                    <ul>
+                        <li>Lorem</li>
+                        <li>Ipsum</li>
+                        <li>Dolor</li>
+                        <li>Sit</li>
+                        <li>Amet</li>
+                    </ul>
+                </div>
+                <div class="info-card packlist-card reveal">
+                    <span class="ic-icon">💄</span>
+                    <h3>Kosmetik</h3>
+                    <ul>
+                        <li>Lorem</li>
+                        <li>Ipsum</li>
+                        <li>Dolor</li>
+                        <li>Sit</li>
+                        <li>Amet</li>
+                    </ul>
+                </div>
+                <div class="info-card packlist-card reveal">
+                    <span class="ic-icon">💄</span>
+                    <h3>Kosmetik</h3>
+                    <ul>
+                        <li>Lorem</li>
+                        <li>Ipsum</li>
+                        <li>Dolor</li>
+                        <li>Sit</li>
+                        <li>Amet</li>
+                    </ul>
+                </div>
+                <div class="info-card packlist-card reveal">
+                    <span class="ic-icon">💄</span>
+                    <h3>Kosmetik</h3>
+                    <ul>
+                        <li>Lorem</li>
+                        <li>Ipsum</li>
+                        <li>Dolor</li>
+                        <li>Sit</li>
+                        <li>Amet</li>
+                    </ul>
+                </div>
+                <div class="info-card packlist-card reveal">
+                    <span class="ic-icon">💄</span>
+                    <h3>Kosmetik</h3>
+                    <ul>
+                        <li>Lorem</li>
+                        <li>Ipsum</li>
+                        <li>Dolor</li>
+                        <li>Sit</li>
+                        <li>Amet</li>
+                    </ul>
+                </div>
+                <div class="info-card packlist-card reveal">
+                    <span class="ic-icon">💄</span>
+                    <h3>Kosmetik</h3>
+                    <ul>
+                        <li>Lorem</li>
+                        <li>Ipsum</li>
+                        <li>Dolor</li>
+                        <li>Sit</li>
+                        <li>Amet</li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -283,29 +453,40 @@
     <section class="page" id="page-faq" data-page="faq">
         <div class="page-hero"><p class="eyebrow" style="justify-content:center;color:var(--gold-light);">Festival-Guide</p>
             <h1>FAQ</h1>
-            <p>Die häufigsten Fragen rund um Everland.</p></div>
+            <p>Die häufigsten Fragen rund um Everland.</p>
+        </div>
         <section class="faq">
             <div class="wrap">
                 <div class="faq-list" id="faqList">
                     <div class="faq-item">
                         <button class="faq-q">Wie komme ich auf die Insel? <span class="plus">+</span></button>
-                        <div class="faq-a"><p>Ausschließlich per Fähre ab dem Anleger in Paleto. Die genauen Abfahrtszeiten findest du zusammen mit deinem Ticket.</p></div>
+                        <div class="faq-a">
+                            <p>Ausschließlich per Fähre ab dem Anleger in Paleto. Die genauen Abfahrtszeiten findest du in der Bestätigungsmail zusammen mit deinen Ticket-Details.</p>
+                        </div>
                     </div>
                     <div class="faq-item">
                         <button class="faq-q">Was ist „Die Nuss"? <span class="plus">+</span></button>
-                        <div class="faq-a"><p>„Die Nuss" ist die exklusive Unterkunft im Enchanted Retreat Package — komfortabler als ein klassisches Zelt und Platz für 4 Personen.</p></div>
+                        <div class="faq-a">
+                            <p>„Die Nuss" ist die exklusive Unterkunft im Enchanted Retreat Package &mdash; komfortabler als ein klassisches Zelt und Platz für 4 Personen.</p>
+                        </div>
                     </div>
                     <div class="faq-item">
                         <button class="faq-q">Wie funktioniert das Tagesticket? <span class="plus">+</span></button>
-                        <div class="faq-a"><p>Tagestickets sind limitiert und je nach Lage auf der Insel verfügbar. Behalte Venture im Blick, um keine Freischaltung zu verpassen.</p></div>
+                        <div class="faq-a">
+                            <p>Tagestickets sind limitiert und je nach Lage auf der Insel verfügbar. Behalte Venture im Blick, um keine Freischaltung zu verpassen.</p>
+                        </div>
                     </div>
                     <div class="faq-item">
                         <button class="faq-q">Darf ich in Kostüm kommen? <span class="plus">+</span></button>
-                        <div class="faq-a"><p>Aber natürlich! Fantasievolle Outfits sind auf Everland ausdrücklich erwünscht.</p></div>
+                        <div class="faq-a">
+                            <p>Aber natürlich! Fantasievolle Outfits sind auf Everland ausdrücklich erwünscht.</p>
+                        </div>
                     </div>
                     <div class="faq-item">
                         <button class="faq-q">Gibt es Duschen &amp; Sanitäranlagen? <span class="plus">+</span></button>
-                        <div class="faq-a"><p>Ja, im Camping-Bereich (siehe Lageplan Punkt 2) stehen Sanitäranlagen für alle Ticket-Inhaber bereit.</p></div>
+                        <div class="faq-a">
+                            <p>Ja, im Camping-Bereich (siehe Lageplan) stehen Sanitäranlagen für alle Festivalbesucher bereit.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -316,13 +497,14 @@
     <section class="page" id="page-timetable" data-page="timetable">
         <div class="dark-section page-hero"><p class="eyebrow" style="justify-content:center;color:var(--gold-light);">Programm</p>
             <h1 style="color:#fbf3e2;">Timetable</h1>
-            <p>Drei Tage, vier Bühnen, unzählige Momente.</p></div>
+            <p>Drei Tage, vier Bühnen, unzählige Momente.</p>
+        </div>
         <section class="dark-section" style="padding-top:70px;">
             <div class="wrap">
                 <div class="day-tabs" role="tablist" aria-label="Festivaltage">
-                    <button class="day-tab active" data-day="fr">Freitag 25.09.</button>
-                    <button class="day-tab" data-day="sa">Samstag 26.09.</button>
-                    <button class="day-tab" data-day="so">Sonntag 27.09.</button>
+                    <button class="day-tab active" data-day="Freitag">Freitag 18.09.</button>
+                    <button class="day-tab" data-day="Samstag">Samstag 19.09.</button>
+                    <button class="day-tab" data-day="Sonntag">Sonntag 20.09.</button>
                 </div>
                 <div class="stage-grid" id="stageGrid"></div>
             </div>
@@ -333,9 +515,11 @@
     <section class="page" id="page-djs" data-page="djs">
         <div class="dark-section page-hero"><p class="eyebrow" style="justify-content:center;color:var(--gold-light);">Programm</p>
             <h1 style="color:#fbf3e2;">Übersicht: DJs</h1>
-            <p>Das komplette DJ-Line-up von Everland — Namen &amp; Zeiten folgen laufend.</p></div>
+            <p>Das komplette DJ-Line-Up von Everland &mdash; Namen &amp; Zeiten folgen laufend.</p>
+        </div>
         <section class="dark-section" style="padding-top:70px;">
             <div class="wrap">
+                <div class="artist-grid" id="djSpecialGrid"></div>
                 <div class="artist-grid" id="djGrid"></div>
             </div>
         </section>
@@ -345,9 +529,12 @@
     <section class="page" id="page-liveacts" data-page="liveacts">
         <div class="dark-section page-hero"><p class="eyebrow" style="justify-content:center;color:var(--gold-light);">Programm</p>
             <h1 style="color:#fbf3e2;">Übersicht: Live-Acts</h1>
-            <p>Bands &amp; Live-Performances auf den Bühnen von Everland.</p></div>
+            <p>Bands &amp; Live-Performances auf den Bühnen von Everland</p>
+            <p>Namen &amp; Zeiten folgen laufend.</p>
+        </div>
         <section class="dark-section" style="padding-top:70px;">
             <div class="wrap">
+                <div class="artist-grid" id="liveSpecialGrid"></div>
                 <div class="artist-grid" id="liveGrid"></div>
             </div>
         </section>
@@ -357,36 +544,44 @@
     <section class="page" id="page-activities" data-page="activities">
         <div class="page-hero"><p class="eyebrow" style="justify-content:center;color:var(--gold-light);">Programm</p>
             <h1>Activities</h1>
-            <p>Mehr als nur Musik — das erwartet dich abseits der Bühnen.</p></div>
-        <section class="features">
-            <div class="wrap">
-                <div class="feature-grid">
-                    <div class="feature-card reveal">
-                        <div class="feature-icon">🛶</div>
-                        <h3>Bootstouren</h3>
-                        <p>Geführte Fahrten rund um die Insel — bei Sonnenuntergang besonders magisch.</p></div>
-                    <div class="feature-card reveal">
-                        <div class="feature-icon">🧵</div>
-                        <h3>Workshops</h3>
-                        <p>Von Kostüm-Basteln bis Klangschalen — kreative Angebote über den ganzen Tag.</p></div>
-                    <div class="feature-card reveal">
-                        <div class="feature-icon">🔥</div>
-                        <h3>Feuershows</h3>
-                        <p>Abendliche Licht- und Feuerinszenierungen am Hauptplatz.</p></div>
-                    <div class="feature-card reveal">
-                        <div class="feature-icon">🌙</div>
-                        <h3>Nacht-Quests</h3>
-                        <p>Interaktive Schnitzeljagden durch die Insel für alle, die es geheimnisvoll mögen.</p></div>
-                </div>
-            </div>
-        </section>
+            <p>Mehr als nur Musik &mdash; das erwartet dich abseits der Bühnen.</p>
+        </div>
+        <!--        <section class="features">-->
+        <!--            <div class="wrap">-->
+        <!--                <div class="feature-grid">-->
+        <!--                    <div class="feature-card reveal">-->
+        <!--                        <div class="feature-icon">🛶</div>-->
+        <!--                        <h3>Bootstouren</h3>-->
+        <!--                        <p>Geführte Fahrten rund um die Insel &mdash; bei Sonnenuntergang besonders magisch.</p>-->
+        <!--                    </div>-->
+        <!--                    <div class="feature-card reveal">-->
+        <!--                        <div class="feature-icon">🧵</div>-->
+        <!--                        <h3>Workshops</h3>-->
+        <!--                        <p>Von Kostüm-Basteln bis Klangschalen &mdash; kreative Angebote über den ganzen Tag.</p>-->
+        <!--                    </div>-->
+        <!--                    <div class="feature-card reveal">-->
+        <!--                        <div class="feature-icon">🔥</div>-->
+        <!--                        <h3>Feuershows</h3>-->
+        <!--                        <p>Abendliche Licht- und Feuerinszenierungen am Hauptplatz.</p>-->
+        <!--                    </div>-->
+        <!--                    <div class="feature-card reveal">-->
+        <!--                        <div class="feature-icon">🌙</div>-->
+        <!--                        <h3>Nacht-Quests</h3>-->
+        <!--                        <p>Interaktive Schnitzeljagden durch die Insel für alle, die es geheimnisvoll mögen.</p>-->
+        <!--                    </div>-->
+        <!--                </div>-->
+        <!--            </div>-->
+        <!--        </section>-->
     </section>
 
     <!-- ================= SPONSOREN ================= -->
     <section class="page" id="page-sponsoren" data-page="sponsoren">
         <div class="page-hero"><p class="eyebrow" style="justify-content:center;color:var(--gold-light);">Everland</p>
             <h1>Sponsoren</h1>
-            <p>Möglich gemacht durch unsere Partner.</p></div>
+            <p>Möglich gemacht durch unsere Partner.</p>
+            <p>Ihr oder eurer Unternehmen möchtet uns unterstützen?</p>
+            <p>Was springt dabei für euch heraus? Hier findet ihr alle Informationen.</p>
+        </div>
         <section>
             <div class="wrap">
                 <div class="sponsor-tier reveal">
@@ -421,7 +616,8 @@
     <section class="page" id="page-team" data-page="team">
         <div class="page-hero"><p class="eyebrow" style="justify-content:center;color:var(--gold-light);">Everland</p>
             <h1>Team</h1>
-            <p>Die Köpfe hinter Everland.</p></div>
+            <p>Die Köpfe hinter Everland.</p>
+        </div>
         <section>
             <div class="wrap">
                 <div class="team-grid" id="teamGrid"></div>
@@ -435,8 +631,8 @@
     <div class="wrap">
         <div class="footer-top">
             <div class="footer-brand">
-                <button class="logo" data-target="home" style="color:var(--gold-light);">Everland<span>A WORLD BEYOND</span></button>
-                <p>Drei Tage jenseits der bekannten Welt — auf einer Insel vor Paleto.</p>
+                <a class="logo" data-target="home" aria-label="Zur Übersicht"></a>
+                <p>Drei Tage jenseits der bekannten Welt &mdash; auf einer Insel vor Paleto.</p>
             </div>
             <div>
                 <h4>Festival</h4>
@@ -465,6 +661,9 @@
                         <button data-target="anreise">Anreise</button>
                     </li>
                     <li>
+                        <button data-target="packliste">Packliste</button>
+                    </li>
+                    <li>
                         <button data-target="faq">FAQ</button>
                     </li>
                 </ul>
@@ -488,8 +687,8 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <span>© Everland — A World Beyond · Insel vor Paleto</span>
-            <span class="footer-badge">📅 25.–27. September</span>
+            <span>&copy; LS Moments | Mit freundlicher Unterstützung durch Bytehunter IT</span>
+            <span class="footer-badge">📅 18.–20. September</span>
         </div>
     </div>
 </footer>
