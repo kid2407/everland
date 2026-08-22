@@ -814,11 +814,6 @@ section {
     border-color: var(--gold-light);
 }
 
-.ticket-card.featured {
-    background:   linear-gradient(160deg, rgba(193, 85, 119, .22), rgba(227, 199, 133, .08));
-    border-color: var(--rose);
-}
-
 .ticket-card .tag {
     position:       absolute;
     top:            -13px;
@@ -832,11 +827,27 @@ section {
     padding:        5px 14px;
     border-radius:  20px;
     text-transform: uppercase;
+    white-space:    nowrap;
+}
+
+.ticket-card.package .tag {
+    color:            #2c1e40;
+    background-color: var(--gold-light);
 }
 
 .ticket-card.limited .tag {
     background: var(--gold);
     color:      #2c1e40;
+}
+
+.ticket-card.featured {
+    background:   linear-gradient(160deg, rgba(193, 85, 119, .22), rgba(227, 199, 133, .08));
+    border-color: var(--rose);
+}
+
+.ticket-card.featured .tag {
+    color:      #fff;
+    background: var(--rose);
 }
 
 .ticket-card h3 {
