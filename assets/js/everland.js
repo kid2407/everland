@@ -93,12 +93,12 @@ const TEAM_MEMBERS = [
     {name: 'John', role: 'Live-Acts'},
     {name: 'River', role: 'Live-Acts'},
     {name: 'Maria', role: 'Live-Acts'},
+    {name: 'Suzu', role: 'Catering'},
     {name: 'Kalea', role: 'DJs'},
     {name: 'Dexter', role: 'DJs'},
     {name: 'Emilia', role: 'DJs'},
     {name: 'Jessy', role: 'Activities'},
     {name: 'Millie', role: 'Activities'},
-    {name: 'Suzu', role: 'Catering'},
     {name: 'Ryu', role: 'Multitalent'}
 ]
 

@@ -1171,6 +1171,20 @@ section {
 }
 
 /* ---------- SPONSOREN / TEAM ---------- */
+
+.sponsorBenefitsGrid {
+    display:              grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:                  33px 22px;
+    max-width:            1180px;
+    margin:               0 auto;
+}
+
+.sponsorBenefitsGrid .sponsorBenefits {
+    border:        1px solid #d9cbe8;
+    border-radius: 15px;
+}
+
 .sponsor-tier {
     margin-bottom: 56px;
 }
