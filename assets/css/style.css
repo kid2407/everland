@@ -1223,10 +1223,34 @@ section {
     padding:   30px 46px;
 }
 
+#teamGrid .eyebrow {
+    display:         flex;
+    justify-content: center;
+    color:           var(--gold);
+    margin-bottom:   20px;
+}
+
+#teamGrid .team-grid + .eyebrow {
+    margin-top: 60px;
+}
+
 .team-grid {
     display:              grid;
-    grid-template-columns:repeat(4, 1fr);
+    grid-template-columns:repeat(3, 1fr);
     gap:                  22px;
+    justify-items:        center;
+}
+
+.team-grid-1 {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.team-grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.team-grid-3 {
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .team-card {
@@ -1236,6 +1260,7 @@ section {
     overflow:      hidden;
     text-align:    center;
     box-shadow:    var(--shadow);
+    width:         360px;
 }
 
 .team-photo {
@@ -1248,7 +1273,7 @@ section {
 }
 
 .team-card h4 {
-    margin:    16px 0 2px;
+    margin:    10px 0;
     font-size: 1.02rem;
 }
 
