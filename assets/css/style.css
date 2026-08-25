@@ -616,6 +616,12 @@ section {
     font-size: .93rem;
 }
 
+#page-anreise .info-card .ic-icon {
+    margin-bottom: 0;
+    display:       unset;
+    margin-right:  10px;
+}
+
 .card-grid.packlist-grid {
     grid-template-columns: repeat(3, 1fr);
     grid-gap:              14px;
@@ -1183,6 +1189,35 @@ section {
 .sponsorBenefitsGrid .sponsorBenefits {
     border:        1px solid #d9cbe8;
     border-radius: 15px;
+}
+
+.sponsorBenefitsGrid ul {
+    list-style-type: none;
+    padding:         0;
+    margin:          18px 0 0;
+}
+
+.sponsorBenefitsGrid ul > li {
+    display:     flex;
+    gap:         6px;
+    text-align:  left;
+    font-weight: normal;
+}
+
+.sponsorBenefitsGrid ul > li::before {
+    content:     "✦";
+    color:       var(--gold);
+    flex-shrink: 0;
+}
+
+.sponsorBenefits {
+    background: var(--purple-mid) !important;
+    color:      #d9cbe8 !important;
+}
+
+.sponsorBenefits h3 {
+    color:     var(--gold);
+    font-size: 1.5rem;
 }
 
 .sponsor-tier {
