@@ -1,14 +1,14 @@
 const STAGES = {
     HEART_OF_THE_KINGDOM: 'Heart of the Kingdom',
-    BUTTERFLY_GARDEN:     'Butterfly Garden',
-    MOON_GROVE:           'Moon Grove',
-    ARCANE_LIBRARY:       'Arcane Library'
+    BUTTERFLY_GARDEN: 'Butterfly Garden',
+    MOON_GROVE: 'Moon Grove',
+    ARCANE_LIBRARY: 'Arcane Library'
 }
 
 const DAYS = {
-    FRIDAY:   "Freitag",
+    FRIDAY: "Freitag",
     SATURDAY: "Samstag",
-    SUNDAY:   "Sonntag"
+    SUNDAY: "Sonntag"
 }
 
 const STAGE_NAMES = [STAGES.HEART_OF_THE_KINGDOM, STAGES.BUTTERFLY_GARDEN, STAGES.MOON_GROVE, STAGES.ARCANE_LIBRARY]
@@ -19,23 +19,23 @@ const STAGE_NAMES = [STAGES.HEART_OF_THE_KINGDOM, STAGES.BUTTERFLY_GARDEN, STAGE
  * @type {{[DAYS.FRIDAY]: {[STAGES.HEART_OF_THE_KINGDOM]: [{time: string, icon: string, title: string, desc: string},{time: string, icon: string, title: string, desc: string}], [STAGES.BUTTERFLY_GARDEN]: [{time: string, icon: string, title: string, desc: string},{time: string, icon: string, title: string, desc: string}], [STAGES.MOON_GROVE]: [{time: string, icon: string, title: string, desc: string},{time: string, icon: string, title: string, desc: string}], [STAGES.ARCANE_LIBRARY]: [{time: string, icon: string, title: string, desc: string}]}, [DAYS.SATURDAY]: {[STAGES.HEART_OF_THE_KINGDOM]: [{time: string, icon: string, title: string, desc: string},{time: string, icon: string, title: string, desc: string}], [STAGES.BUTTERFLY_GARDEN]: [{time: string, icon: string, title: string, desc: string},{time: string, icon: string, title: string, desc: string}], [STAGES.MOON_GROVE]: [{time: string, icon: string, title: string, desc: string},{time: string, icon: string, title: string, desc: string}], [STAGES.ARCANE_LIBRARY]: [{time: string, icon: string, title: string, desc: string},{time: string, icon: string, title: string, desc: string}]}, [DAYS.SUNDAY]: {[STAGES.HEART_OF_THE_KINGDOM]: [{time: string, icon: string, title: string, desc: string}], [STAGES.BUTTERFLY_GARDEN]: [{time: string, icon: string, title: string, desc: string}], [STAGES.MOON_GROVE]: [{time: string, icon: string, title: string, desc: string},{time: string, icon: string, title: string, desc: string}], [STAGES.ARCANE_LIBRARY]: [{time: string, icon: string, title: string, desc: string}]}}}
  */
 const PROGRAM_DATA = {
-    [DAYS.FRIDAY]:   {
+    [DAYS.FRIDAY]: {
         [STAGES.HEART_OF_THE_KINGDOM]: [],
-        [STAGES.BUTTERFLY_GARDEN]:     [],
-        [STAGES.MOON_GROVE]:           [],
-        [STAGES.ARCANE_LIBRARY]:       []
+        [STAGES.BUTTERFLY_GARDEN]: [],
+        [STAGES.MOON_GROVE]: [],
+        [STAGES.ARCANE_LIBRARY]: []
     },
     [DAYS.SATURDAY]: {
         [STAGES.HEART_OF_THE_KINGDOM]: [],
-        [STAGES.BUTTERFLY_GARDEN]:     [],
-        [STAGES.MOON_GROVE]:           [],
-        [STAGES.ARCANE_LIBRARY]:       []
+        [STAGES.BUTTERFLY_GARDEN]: [],
+        [STAGES.MOON_GROVE]: [],
+        [STAGES.ARCANE_LIBRARY]: []
     },
-    [DAYS.SUNDAY]:   {
+    [DAYS.SUNDAY]: {
         [STAGES.HEART_OF_THE_KINGDOM]: [],
-        [STAGES.BUTTERFLY_GARDEN]:     [],
-        [STAGES.MOON_GROVE]:           [],
-        [STAGES.ARCANE_LIBRARY]:       []
+        [STAGES.BUTTERFLY_GARDEN]: [],
+        [STAGES.MOON_GROVE]: [],
+        [STAGES.ARCANE_LIBRARY]: []
     }
 }
 
@@ -86,17 +86,46 @@ const LIVE_ACTS = [
 ]
 
 /**
- * @type {{"Festival-Leitung": string[], "Live-Acts": string[], DJs: string[], Catering: string[], Activities: string[], Multitalente: string[]}}
+ * @type {{"Festival-Leitung": [{name: string, image: boolean},{name: string, image: boolean}], Bauplaner: [{name: string, image: boolean},{name: string, image: boolean},{name: string, image: boolean},{name: string, image: boolean},{name: string, image: boolean}], "Security & Beh&ouml;rden": [{name: string, image: boolean},{name: string, image: boolean},{name: string, image: boolean}], DJs: [{name: string, image: boolean},{name: string, image: boolean},{name: string, image: boolean}], "Live-Acts": [{name: string, image: boolean},{name: string, image: boolean},{name: string, image: boolean}], Catering: [{name: string, image: boolean}], Activities: [{name: string, image: boolean},{name: string, image: boolean}], Multitalente: [{name: string, image: boolean},{name: string, image: boolean}]}}
  */
 const TEAM_MEMBERS = {
-    "Festival-Leitung":         ["Noah", "Jessy"],
-    "Bauplaner":                ["Noah", "Ryu", "Alice", "Lutzi", "Kalea"],
-    "Live-Acts":                ["John", "River", "Maria"],
-    "DJs":                      ["Kalea", "Dexter", "Emilia"],
-    "Activities":               ["Jessy", "Millie"],
-    "Security & Beh&ouml;rden": ["Chloe", "Lutzi", "Cooper"],
-    "Catering":                 ["Suzu"],
-    "Multitalente":             ["Ryu", "Bigfoot"],
+    "Festival-Leitung": [
+        {"name": "Noah", "image": true},
+        {"name": "Jessy", "image": true}
+    ],
+    "Bauplaner": [
+        {"name": "Noah", "image": true},
+        {"name": "Ryu", "image": false},
+        {"name": "Alice", "image": false},
+        {"name": "Lutzi", "image": true},
+        {"name": "Kalea", "image": true}
+    ],
+    "Security & Beh&ouml;rden": [
+        {"name": "Chloe", "image": false},
+        {"name": "Lutzi", "image": true},
+        {"name": "Cooper", "image": true}
+    ],
+    "DJs": [
+        {"name": "Kalea", "image": true},
+        {"name": "Dexter", "image": true},
+        {"name": "Emilia", "image": true}
+    ],
+    "Live-Acts": [
+        {"name": "John", "image": true},
+        {"name": "River", "image": true},
+        {"name": "Maria", "image": false}
+    ],
+    "Catering": [
+        {"name": "Suzune", "image": true}
+    ],
+    "Activities": [
+        {"name": "Jessy", "image": true},
+        {"name": "Millie", "image": true}
+    ],
+    "Multitalente": [
+        {"name": "Ryu", "image": false},
+        {"name": "Bigfoot", "image": false}
+    ],
 }
 
 // ---------- nav scroll state ----------
@@ -107,7 +136,7 @@ window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.
 document.querySelectorAll('[data-toggle-drop]').forEach(btn => {
     btn.addEventListener('click', (e) => {
         e.stopPropagation()
-        const item    = btn.closest('.nav-item')
+        const item = btn.closest('.nav-item')
         const wasOpen = item.classList.contains('open')
         document.querySelectorAll('.nav-item.open').forEach(i => i.classList.remove('open'))
         if (!wasOpen) item.classList.add('open')
@@ -138,34 +167,35 @@ document.querySelectorAll('[data-target]').forEach(el => {
 // ---------- stars ----------
 const starsEl = document.getElementById('stars')
 for (let i = 0; i < 60; i++) {
-    const s                = document.createElement('div')
-    s.className            = 'star'
-    s.style.left           = Math.random() * 100 + '%'
-    s.style.top            = Math.random() * 55 + '%'
+    const s = document.createElement('div')
+    s.className = 'star'
+    s.style.left = Math.random() * 100 + '%'
+    s.style.top = Math.random() * 55 + '%'
     s.style.animationDelay = (Math.random() * 3.5) + 's'
     starsEl.appendChild(s)
 }
 // ---------- fireflies ----------
 const flyEl = document.getElementById('fireflies')
 for (let i = 0; i < 14; i++) {
-    const f                   = document.createElement('div')
-    f.className               = 'firefly'
-    f.style.left              = (10 + Math.random() * 80) + '%'
-    f.style.top               = (40 + Math.random() * 45) + '%'
-    f.style.animationDelay    = (Math.random() * 9) + 's'
+    const f = document.createElement('div')
+    f.className = 'firefly'
+    f.style.left = (10 + Math.random() * 80) + '%'
+    f.style.top = (40 + Math.random() * 45) + '%'
+    f.style.animationDelay = (Math.random() * 9) + 's'
     f.style.animationDuration = (7 + Math.random() * 5) + 's'
     flyEl.appendChild(f)
 }
 
 // ---------- scroll reveal ----------
 const io = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-        if (e.isIntersecting) {
-            e.target.classList.add('in')
-            io.unobserve(e.target)
-        }
-    })
-}, {threshold: 0.15})
+        entries.forEach(e => {
+            if (e.isIntersecting) {
+                e.target.classList.add('in')
+                io.unobserve(e.target)
+            }
+        })
+    },
+    {threshold: 0.15})
 document.querySelectorAll('.reveal').forEach(el => io.observe(el))
 
 // ---------- FAQ accordion ----------
@@ -192,7 +222,7 @@ function renderDay(day) {
     let col, items
     stageGrid.innerHTML = ''
     STAGE_NAMES.forEach(stage => {
-        col           = document.createElement('div')
+        col = document.createElement('div')
         col.className = 'stage-col'
         if (PROGRAM_DATA[day].hasOwnProperty(stage) && PROGRAM_DATA[day][stage].length > 0) {
             items = (PROGRAM_DATA[day][stage]).map(item =>
@@ -256,17 +286,19 @@ fillGrid('liveGrid', LIVE_ACTS, 'live')
 
 const teamGridEl = document.getElementById('teamGrid')
 if (teamGridEl) {
-    let teamHTML = ''
+    let teamHTML = '', memberCard = ''
     for (let [role, members] of Object.entries(TEAM_MEMBERS)) {
         teamHTML += `<p class="eyebrow">${role}</p>`
         teamHTML += `<div class="team-grid team-grid-${members.length}">`
-        teamHTML += members.map(member => `
+        teamHTML += members.map(member => {
+            return `
             <div class="team-card reveal in">
                 <div class="team-photo">
-                    <img src="/everland/assets/img/artistPlaceholder.gif">
+                    <img src="${member.image ? `/everland/assets/img/team/${member.name}.gif` : '/everland/assets/img/artistPlaceholder.gif'}">
                 </div>
-                <h4>${member}</h4>
-            </div>`).join('')
+                <h4>${member.name}</h4>
+            </div>`
+        }).join('')
         teamHTML += `</div>`
     }
 
