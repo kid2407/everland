@@ -1205,6 +1205,25 @@ section {
     margin:               0 auto;
 }
 
+.sponsorBenefitsGrid.twoColumns {
+    grid-template-columns: 1fr 1fr;
+}
+
+.sponsorBenefitsGrid.twoColumns .sponsorBenefits p {
+    font-weight: normal;
+}
+
+.sponsor-divider {
+    margin:          50px 0 20px 0;
+    display:         flex;
+    justify-content: center;
+    color:           var(--gold);
+}
+
+#limitedTicketsNotice {
+    text-align: center;
+}
+
 .sponsorBenefitsGrid .sponsorBenefits {
     border:        1px solid #d9cbe8;
     border-radius: 15px;
