@@ -76,7 +76,7 @@
                     <button class="btn btn-ghost" data-target="timetable">Programm entdecken</button>
                 </div>
                 <br>
-                <div class="story">
+                <div id="story" class="story">
                     Es gibt Geschichten, die erzählt man sich nur im Flüsterton.
                     <br><br>Von einer Insel, weit draußen vor den Küsten von Paleto Bay. Eine Insel, die auf keiner Karte verzeichnet ist und die nur erscheint, wenn die Nacht lang genug und der Mond hell
                     genug ist.
@@ -107,6 +107,7 @@
                     <br><br>Everland.
                     <br><br>Eine Welt jenseits unserer
                 </div>
+                <button class="btn btn-ghost" onclick="this.classList.add('hidden'); document.getElementById('story').classList.add('expanded'); document.getElementById('story').scrollIntoView(true)">Mehr lesen <span class="caret">▾</span></button>
             </div>
         </div>
 

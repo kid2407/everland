@@ -1416,6 +1416,19 @@ footer {
 }
 
 .story {
-    color:      #f1e6d3;
-    margin-top: 60px;
+    color:             #f1e6d3;
+    margin-top:        60px;
+    max-height:        300px;
+    overflow:          hidden;
+    transition:        max-height 2s ease;
+    scroll-margin-top: calc(var(--header-height) + 15px);
+}
+
+.story.expanded {
+    max-height: 100%;
+    transition: max-height 2s ease;
+}
+
+.hidden {
+    display: none;
 }
