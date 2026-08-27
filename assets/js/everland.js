@@ -95,13 +95,13 @@ const TEAM_MEMBERS = {
     ],
     "Bauplaner": [
         {"name": "Noah", "image": true},
-        {"name": "Ryu", "image": false},
-        {"name": "Alice", "image": false},
+        {"name": "Ryu", "image": true},
+        {"name": "Alice", "image": true},
         {"name": "Lutzi", "image": true},
         {"name": "Kalea", "image": true}
     ],
     "Security & Beh&ouml;rden": [
-        {"name": "Chloe", "image": false},
+        {"name": "Chloe", "image": true},
         {"name": "Lutzi", "image": true},
         {"name": "Cooper", "image": true}
     ],
@@ -123,7 +123,7 @@ const TEAM_MEMBERS = {
         {"name": "Millie", "image": true}
     ],
     "Multitalente": [
-        {"name": "Ryu", "image": false},
+        {"name": "Ryu", "image": true},
         {"name": "Bigfoot", "image": false}
     ],
 }
