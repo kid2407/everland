@@ -123,8 +123,7 @@ const TEAM_MEMBERS = {
         {"name": "Millie", "image": true}
     ],
     "Multitalente": [
-        {"name": "Ryu", "image": true},
-        {"name": "Bigfoot", "image": false}
+        {"name": "Ryu", "image": true}
     ],
 }
 
