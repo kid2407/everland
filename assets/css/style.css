@@ -1294,10 +1294,32 @@ section {
     box-shadow:    var(--shadow);
 }
 
+.sponsor-row .sponsor-badge img {
+    max-width: 200px;
+    margin:    0 auto;
+}
+
+.sponsor-row.main .sponsor-badge img {
+    max-width: 475px;
+}
+
 .sponsor-row.main .sponsor-badge {
     font-size: 1.2rem;
     color:     var(--ink);
     padding:   30px 46px;
+}
+
+.sponsor-tier .sponsor-row .sponsor-badge {
+    padding: 10px;
+}
+
+.sponsor-tier .sponsor-row .sponsor-badge p {
+    margin-bottom: 0;
+    margin-top:    20px;
+}
+
+.thank-you {
+    width: 1024px;
 }
 
 #teamGrid .eyebrow {
