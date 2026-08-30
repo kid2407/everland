@@ -1309,6 +1309,24 @@ section {
     padding:   30px 46px;
 }
 
+.sponsor-row.main.is-sponsors {
+    gap:              0;
+    background-color: var(--parchment);
+    box-shadow:       var(--shadow);
+    border:           1px solid var(--parchment-line);
+    border-radius:    14px;
+}
+
+.sponsor-row.main.is-sponsors .sponsor-badge {
+    background: none;
+    border:     none;
+    box-shadow: none;
+}
+
+.sponsor-row.main.is-sponsors .sponsor-badge img {
+    max-width: 540px;
+}
+
 .sponsor-tier .sponsor-row .sponsor-badge {
     padding: 10px;
 }
@@ -1319,7 +1337,7 @@ section {
 }
 
 .thank-you {
-    width: 1024px;
+    width: 100%;
 }
 
 #teamGrid .eyebrow {
