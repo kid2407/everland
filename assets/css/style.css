@@ -1295,12 +1295,14 @@ section {
 }
 
 .sponsor-row .sponsor-badge img {
-    max-width: 200px;
-    margin:    0 auto;
+    max-width:  242px;
+    max-height: 242px;
+    margin:     auto;
 }
 
 .sponsor-row.main .sponsor-badge img {
-    max-width: 475px;
+    max-width:  475px;
+    max-height: 475px;
 }
 
 .sponsor-row.main .sponsor-badge {
@@ -1323,12 +1325,17 @@ section {
     box-shadow: none;
 }
 
+.sponsor-row.main .sponsor-badge, .thank-you {
+    display: block !important;
+}
+
 .sponsor-row.main.is-sponsors .sponsor-badge img {
     max-width: 540px;
 }
 
 .sponsor-tier .sponsor-row .sponsor-badge {
     padding: 10px;
+    display: flex;
 }
 
 .sponsor-tier .sponsor-row .sponsor-badge p {
