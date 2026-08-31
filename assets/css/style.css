@@ -1343,6 +1343,10 @@ section {
     margin-top:    20px;
 }
 
+.additionalSponsors .sponsor-badge {
+    width: 264px;
+}
+
 .thank-you {
     width: 100%;
 }
