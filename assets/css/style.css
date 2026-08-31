@@ -1334,8 +1334,10 @@ section {
 }
 
 .sponsor-tier .sponsor-row .sponsor-badge {
-    padding: 10px;
-    display: flex;
+    padding:         10px;
+    display:         flex;
+    justify-content: center;
+    align-items:     center;
 }
 
 .sponsor-tier .sponsor-row .sponsor-badge p {
@@ -1344,7 +1346,16 @@ section {
 }
 
 .additionalSponsors .sponsor-badge {
-    width: 264px;
+    width:  264px;
+    height: 264px;
+}
+
+.additionalSponsors .sponsor-badge > p {
+    vertical-align: middle;
+    width:          100%;
+    margin-top:     0 !important;
+    color:          var(--gold);
+    font-size:      1.5rem;
 }
 
 .thank-you {
