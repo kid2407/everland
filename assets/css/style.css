@@ -14,6 +14,7 @@
     --gold-light:     #e3c785;
     --shadow:         0 18px 40px -18px rgba(30, 20, 10, 0.35);
     --header-height:  88px;
+    --cherry-blossom: #6b4c6d;
 }
 
 * {
@@ -1283,8 +1284,7 @@ section {
 }
 
 .sponsor-badge {
-    background:    var(--parchment);
-    border:        1px solid var(--parchment-line);
+    background:    var(--cherry-blossom);
     border-radius: 14px;
     padding:       24px 34px;
     font-weight:   700;
@@ -1312,10 +1312,9 @@ section {
 }
 
 .sponsor-row.main.is-sponsors {
-    gap:              0;
-    background-color: var(--parchment);
+    gap:              10px;
+    background-color: var(--cherry-blossom);
     box-shadow:       var(--shadow);
-    border:           1px solid var(--parchment-line);
     border-radius:    14px;
 }
 
@@ -1323,6 +1322,8 @@ section {
     background: none;
     border:     none;
     box-shadow: none;
+    width:      556px;
+    height:     610px;
 }
 
 .sponsor-row.main .sponsor-badge, .thank-you {
@@ -1330,7 +1331,8 @@ section {
 }
 
 .sponsor-row.main.is-sponsors .sponsor-badge img {
-    max-width: 540px;
+    max-width:  540px;
+    max-height: 540px;
 }
 
 .sponsor-tier .sponsor-row .sponsor-badge {
@@ -1343,6 +1345,7 @@ section {
 .sponsor-tier .sponsor-row .sponsor-badge p {
     margin-bottom: 0;
     margin-top:    20px;
+    color:         var(--cream);
 }
 
 .additionalSponsors .sponsor-badge {
@@ -1354,7 +1357,7 @@ section {
     vertical-align: middle;
     width:          100%;
     margin-top:     0 !important;
-    color:          var(--gold);
+    color:          var(--cream);
     font-size:      1.5rem;
 }
 
