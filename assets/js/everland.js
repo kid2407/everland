@@ -40,7 +40,7 @@ const STAGE_NAMES = [STAGES.HEART_OF_THE_KINGDOM, STAGES.ARCANE_LIBRARY, STAGES.
 const PROGRAM_DATA = {
     [DAYS.FRIDAY]: {
         [STAGES.HEART_OF_THE_KINGDOM]: [
-            {time: "16:30", type: "dj", name: "Street", genre: "Handsup"},
+            {time: "16:30", type: "dj", name: "DJ Street", genre: "Handsup"},
             {time: "18:30", type: "dj", name: "SetteSensi", genre: "Techno"},
             {time: "20:00", type: "dj", name: "Sonic Pain", genre: "Hardstyle / Hardtechno"},
             {time: "21:00", type: "dj", name: "Vexx", genre: "Techno / Schranz"},
@@ -114,12 +114,12 @@ const PROGRAM_DATA = {
             {time: "19:30", type: "dj", name: "SetteSensi", genre: "House"},
             {time: "20:30", type: "dj", name: "Maus", genre: "???"},
             {time: "21:30", type: "dj", name: "Triple T", genre: "Dance-Pop"},
-            {time: "23:00", type: "dj", name: "Street", genre: "80er-2000er"}
+            {time: "23:00", type: "dj", name: "DJ Street", genre: "80er-2000er"}
         ],
         [STAGES.BUTTERFLY_GARDEN]: [
             {time: "00:00", type: "dj", name: "Emotional Damage", genre: "???"},
             {time: "00:30", type: "dj", name: "Black Tiger", genre: "80s-90s"},
-            {time: "14:30", type: "dj", name: "Street", genre: "???"},
+            {time: "14:30", type: "dj", name: "DJ Street", genre: "???"},
             {time: "16:00", type: "dj", name: "Bohne Frei", genre: "Chill / Club House"},
             {time: "17:30", type: "dj", name: "Zoria", genre: "???"},
             {time: "18:30", type: "dj", name: "Oceana", genre: "Epic"},
@@ -140,11 +140,10 @@ const PROGRAM_DATA = {
         ],
         [STAGES.ARCANE_LIBRARY]:       [
             {time: "00:00", type: "live", name: "Jarvis", genre: "Rap"},
-            {time: "00:30", type: "live", name: "404UNK & Friends", genre: "Rap"},
-            {time: "13:00", type: "live", name: "Aquafitness", genre: "Mit Shamrock"}
+            {time: "00:30", type: "live", name: "404UNK & Friends", genre: "Rap"}
         ],
         [STAGES.MOON_GROVE]:           [
-            {time: "00:00", type: "dj", name: "Street", genre: "???"},
+            {time: "00:00", type: "dj", name: "DJ Street", genre: "80er-2000er"},
             {time: "00:30", type: "dj", name: "DJ JAR", genre: "Mainstream-Pop"}
         ],
         [STAGES.BUTTERFLY_GARDEN]:     [
