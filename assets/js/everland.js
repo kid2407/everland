@@ -11,7 +11,7 @@ const DAYS = {
     SUNDAY:   "Sonntag"
 }
 
-const STAGE_NAMES = [STAGES.HEART_OF_THE_KINGDOM, STAGES.BUTTERFLY_GARDEN, STAGES.MOON_GROVE, STAGES.ARCANE_LIBRARY]
+const STAGE_NAMES = [STAGES.HEART_OF_THE_KINGDOM, STAGES.ARCANE_LIBRARY, STAGES.MOON_GROVE, STAGES.BUTTERFLY_GARDEN]
 
 /**
  * TODO: Platzhalter-Programm durch echtes Line-Up ersetzen.
@@ -38,25 +38,121 @@ const STAGE_NAMES = [STAGES.HEART_OF_THE_KINGDOM, STAGES.BUTTERFLY_GARDEN, STAGE
  * }}
  */
 const PROGRAM_DATA = {
-    [DAYS.FRIDAY]:   {
-        [STAGES.HEART_OF_THE_KINGDOM]: [],
-        [STAGES.BUTTERFLY_GARDEN]:     [],
-        [STAGES.MOON_GROVE]:           [],
-        [STAGES.ARCANE_LIBRARY]:       []
+    [DAYS.FRIDAY]: {
+        [STAGES.HEART_OF_THE_KINGDOM]: [
+            {time: "16:30", type: "dj", name: "Street", genre: "Handsup"},
+            {time: "18:30", type: "dj", name: "SetteSensi", genre: "Techno"},
+            {time: "20:00", type: "dj", name: "Sonic Pain", genre: "Hardstyle / Hardtechno"},
+            {time: "21:00", type: "dj", name: "Vexx", genre: "Techno / Schranz"},
+            {time: "22:30", type: "dj", name: "Maus", genre: "Techno"}
+        ],
+        [STAGES.ARCANE_LIBRARY]:       [
+            {time: "19:30", type: "live", name: "Chloe", genre: "Balladen"},
+            {time: "20:00", type: "live", name: "HUSH", genre: "Hardrock, Metal"},
+            {time: "20:30", type: "live", name: "Silenzio", genre: "Klavier, ruhig bis schneller"},
+            {time: "21:30", type: "live", name: "G!ANN!", genre: "Rap, Pop"},
+            {time: "22:00", type: "live", name: "KIKI", genre: "J-Pop, JazzPop"},
+            {time: "23:00", type: "live", name: "Auntie Whitney", genre: "Jazz, Soul"},
+            {time: "23:30", type: "live", name: "ONLY K.O.", genre: "HipHop, Boom Bap, Oldschool Beats"}
+        ],
+        [STAGES.MOON_GROVE]:           [
+            {time: "17:00", type: "dj", name: "Kaayaal", genre: "Heutige Hits (Club Mix)"},
+            {time: "18:00", type: "dj", name: "Zoria", genre: "80er - 2000er"},
+            {time: "19:30", type: "dj", name: "Oceana", genre: "House & 2010er Remixe"},
+            {time: "21:00", type: "dj", name: "Ardent Luna", genre: "EDM"},
+            {time: "22:00", type: "dj", name: "Aura Nights", genre: "House"},
+            {time: "23:00", type: "dj", name: "Sync´d Souls", genre: "House"}
+        ],
+        [STAGES.BUTTERFLY_GARDEN]:     [
+            {time: "17:30", type: "dj", name: "DJ Jar", genre: "J-Pop"},
+            {time: "19:00", type: "dj", name: "DJ Obscura", genre: "???"},
+            {time: "20:30", type: "dj", name: "Bohne Frei", genre: "Rock / Metal"},
+            {time: "22:00", type: "dj", name: "Emotional Damage", genre: "Punkrock"}
+        ]
     },
+
     [DAYS.SATURDAY]: {
-        [STAGES.HEART_OF_THE_KINGDOM]: [],
-        [STAGES.BUTTERFLY_GARDEN]:     [],
-        [STAGES.MOON_GROVE]:           [],
-        [STAGES.ARCANE_LIBRARY]:       []
+        [STAGES.HEART_OF_THE_KINGDOM]: [
+            {time: "00:00", type: "dj", name: "NLYNX", genre: "???"},
+            {time: "01:00", type: "dj", name: "Triple T.", genre: "Techno"},
+            {time: "02:00", type: "dj", name: "DJ N-Tec", genre: "Techno"},
+            {time: "03:00", type: "dj", name: "DJ Xavi", genre: "Techno / Hardstyle"},
+            {time: "14:30", type: "dj", name: "DJ Orochi", genre: "Bounce / Mashups"},
+            {time: "16:30", type: "dj", name: "Djane Moonlight", genre: "Techno"},
+            {time: "18:00", type: "dj", name: "Ardent Luna", genre: "Techno"},
+            {time: "19:00", type: "dj", name: "DJ Aura Nights", genre: "Techno"},
+            {time: "21:00", type: "dj", name: "DJ Zoria", genre: "BigRoom"},
+            {time: "23:00", type: "dj", name: "Skully n Bone", genre: "Hardtechno"}
+        ],
+
+        [STAGES.ARCANE_LIBRARY]:   [
+            {time: "12:00", type: "live", name: "Fehnfieber", genre: "Piano"},
+            {time: "14:00", type: "live", name: "Der weiße Drache", genre: "???"},
+            {time: "14:30", type: "live", name: "Jarvis", genre: "Rap"},
+            {time: "15:00", type: "live", name: "Millie", genre: "???"},
+            {time: "16:00", type: "live", name: "C7CTUS", genre: "Rap / Trap / R&B"},
+            {time: "16:30", type: "live", name: "Chay Latte", genre: "Gesang / Pop"},
+            {time: "17:00", type: "live", name: "Blanche", genre: "Pop, Folk"},
+            {time: "18:00", type: "live", name: "Dave P", genre: "???"},
+            {time: "18:30", type: "live", name: "Keira Maguire", genre: "Pop, Folk"},
+            {time: "19:00", type: "live", name: "TheRealRJ", genre: "Rap / HipHop / Pop"},
+            {time: "20:00", type: "live", name: "JUMO", genre: "???"},
+            {time: "20:30", type: "live", name: "aMillie", genre: "Rock, Pop, Indie, Soul, R&B"},
+            {time: "21:00", type: "live", name: "C0LT", genre: "Rap"},
+            {time: "22:00", type: "live", name: "Loraine Dunnaham", genre: "Soul-Pop, Jazz & Dark Blues"},
+            {time: "22:30", type: "live", name: "Ruby McMahon", genre: "???"},
+            {time: "23:00", type: "live", name: "Tatsuya", genre: "???"}
+        ],
+        [STAGES.MOON_GROVE]:       [
+            {time: "00:00", type: "dj", name: "Sync´d Souls", genre: "???"},
+            {time: "01:00", type: "dj", name: "Db", genre: "House"},
+            {time: "14:00", type: "dj", name: "Open DJ-Pult", genre: "???"},
+            {time: "15:00", type: "dj", name: "DJ Kayaal", genre: "80er - 2000er"},
+            {time: "16:00", type: "dj", name: "Sonic Pain", genre: "Workout-Mix"},
+            {time: "17:30", type: "dj", name: "Vexx", genre: "Trance / Psytrance"},
+            {time: "18:30", type: "dj", name: "Obscura", genre: "???"},
+            {time: "19:30", type: "dj", name: "SetteSensi", genre: "House"},
+            {time: "20:30", type: "dj", name: "Maus", genre: "???"},
+            {time: "21:30", type: "dj", name: "Triple T", genre: "Dance-Pop"},
+            {time: "23:00", type: "dj", name: "Street", genre: "80er-2000er"}
+        ],
+        [STAGES.BUTTERFLY_GARDEN]: [
+            {time: "00:00", type: "dj", name: "Emotional Damage", genre: "???"},
+            {time: "00:30", type: "dj", name: "Black Tiger", genre: "80s-90s"},
+            {time: "14:30", type: "dj", name: "Street", genre: "???"},
+            {time: "16:00", type: "dj", name: "Bohne Frei", genre: "Chill / Club House"},
+            {time: "17:30", type: "dj", name: "Zoria", genre: "???"},
+            {time: "18:30", type: "dj", name: "Oceana", genre: "Epic"},
+            {time: "19:30", type: "dj", name: "DJ Xavi", genre: "Latin"},
+            {time: "20:30", type: "dj", name: "Mo", genre: "HipHop"},
+            {time: "22:00", type: "dj", name: "Hari", genre: "Metal"}
+        ]
     },
-    [DAYS.SUNDAY]:   {
-        [STAGES.HEART_OF_THE_KINGDOM]: [],
-        [STAGES.BUTTERFLY_GARDEN]:     [],
-        [STAGES.MOON_GROVE]:           [],
-        [STAGES.ARCANE_LIBRARY]:       []
+
+    [DAYS.SUNDAY]: {
+        [STAGES.HEART_OF_THE_KINGDOM]: [
+            {time: "00:00", type: "dj", name: "Saijin", genre: "Schranz / Melodic"},
+            {time: "01:30", type: "dj", name: "Vanilla", genre: "Hardtechno / Industrialtechno"},
+            {time: "03:00", type: "dj", name: "Oceana", genre: "Techno / Elektro"},
+            {time: "11:00", type: "dj", name: "Open DJ-Pult", genre: "???"},
+            {time: "12:00", type: "dj", name: "DJ Moonlight", genre: "Latin"},
+            {time: "13:30", type: "dj", name: "Dj's from LSM", genre: "DJ's from LSM"}
+        ],
+        [STAGES.ARCANE_LIBRARY]:       [
+            {time: "00:00", type: "live", name: "Jarvis", genre: "Rap"},
+            {time: "00:30", type: "live", name: "404UNK & Friends", genre: "Rap"},
+            {time: "13:00", type: "live", name: "Aquafitness", genre: "Mit Shamrock"}
+        ],
+        [STAGES.MOON_GROVE]:           [
+            {time: "00:00", type: "dj", name: "Street", genre: "???"},
+            {time: "00:30", type: "dj", name: "DJ JAR", genre: "Mainstream-Pop"}
+        ],
+        [STAGES.BUTTERFLY_GARDEN]:     [
+            {time: "00:00", type: "dj", name: "N-Tec", genre: "House"}
+        ]
     }
 }
+
 
 /**
  * @type {{name: string, genre: string, slot: string, img: string?, special: boolean?}[]}
