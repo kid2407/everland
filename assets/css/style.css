@@ -1365,6 +1365,14 @@ section {
     width: 100%;
 }
 
+.sponsor-tier.specialMention .sponsor-row .sponsor-badge {
+    max-width: 495px;
+}
+
+.sponsor-tier.specialMention .sponsor-row .sponsor-badge > p {
+    font-weight: normal;
+}
+
 #teamGrid .eyebrow {
     display:         flex;
     justify-content: center;
