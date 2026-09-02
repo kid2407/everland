@@ -1,14 +1,14 @@
 const STAGES = {
     HEART_OF_THE_KINGDOM: 'Heart of the Kingdom',
-    BUTTERFLY_GARDEN: 'Butterfly Garden',
-    MOON_GROVE: 'Moon Grove',
-    ARCANE_LIBRARY: 'Arcane Library'
+    BUTTERFLY_GARDEN:     'Butterfly Garden',
+    MOON_GROVE:           'Moon Grove',
+    ARCANE_LIBRARY:       'Arcane Library'
 }
 
 const DAYS = {
-    FRIDAY: "Freitag",
+    FRIDAY:   "Freitag",
     SATURDAY: "Samstag",
-    SUNDAY: "Sonntag"
+    SUNDAY:   "Sonntag"
 }
 
 const STAGE_NAMES = [STAGES.HEART_OF_THE_KINGDOM, STAGES.BUTTERFLY_GARDEN, STAGES.MOON_GROVE, STAGES.ARCANE_LIBRARY]
@@ -16,84 +16,103 @@ const STAGE_NAMES = [STAGES.HEART_OF_THE_KINGDOM, STAGES.BUTTERFLY_GARDEN, STAGE
 /**
  * TODO: Platzhalter-Programm durch echtes Line-Up ersetzen.
  *
- * @type {{[DAYS.FRIDAY]: {[STAGES.HEART_OF_THE_KINGDOM]: [{time: string, icon: string, title: string, desc: string},{time: string, icon: string, title: string, desc: string}], [STAGES.BUTTERFLY_GARDEN]: [{time: string, icon: string, title: string, desc: string},{time: string, icon: string, title: string, desc: string}], [STAGES.MOON_GROVE]: [{time: string, icon: string, title: string, desc: string},{time: string, icon: string, title: string, desc: string}], [STAGES.ARCANE_LIBRARY]: [{time: string, icon: string, title: string, desc: string}]}, [DAYS.SATURDAY]: {[STAGES.HEART_OF_THE_KINGDOM]: [{time: string, icon: string, title: string, desc: string},{time: string, icon: string, title: string, desc: string}], [STAGES.BUTTERFLY_GARDEN]: [{time: string, icon: string, title: string, desc: string},{time: string, icon: string, title: string, desc: string}], [STAGES.MOON_GROVE]: [{time: string, icon: string, title: string, desc: string},{time: string, icon: string, title: string, desc: string}], [STAGES.ARCANE_LIBRARY]: [{time: string, icon: string, title: string, desc: string},{time: string, icon: string, title: string, desc: string}]}, [DAYS.SUNDAY]: {[STAGES.HEART_OF_THE_KINGDOM]: [{time: string, icon: string, title: string, desc: string}], [STAGES.BUTTERFLY_GARDEN]: [{time: string, icon: string, title: string, desc: string}], [STAGES.MOON_GROVE]: [{time: string, icon: string, title: string, desc: string},{time: string, icon: string, title: string, desc: string}], [STAGES.ARCANE_LIBRARY]: [{time: string, icon: string, title: string, desc: string}]}}}
+ * @type {{
+ * [DAYS.FRIDAY]: {
+ *  [STAGES.HEART_OF_THE_KINGDOM]: {time: string, type: string, name: string, genre: string}[],
+ *  [STAGES.BUTTERFLY_GARDEN]: {time: string, type: string, name: string, genre: string}[],
+ *  [STAGES.MOON_GROVE]: {time: string, type: string, name: string, genre: string}[],
+ *  [STAGES.ARCANE_LIBRARY]: {time: string, type: string, name: string, genre: string}[]
+ * },
+ * [DAYS.SATURDAY]: {
+ *  [STAGES.HEART_OF_THE_KINGDOM]: {time: string, type: string, name: string, genre: string}[],
+ *  [STAGES.BUTTERFLY_GARDEN]: {time: string, type: string, name: string, genre: string}[],
+ *  [STAGES.MOON_GROVE]: {time: string, type: string, name: string, genre: string}[],
+ *  [STAGES.ARCANE_LIBRARY]: {time: string, type: string, name: string, genre: string}[]
+ * },
+ * [DAYS.SUNDAY]: {
+ *  [STAGES.HEART_OF_THE_KINGDOM]: {time: string, type: string, name: string, genre: string}[],
+ *  [STAGES.BUTTERFLY_GARDEN]: {time: string, type: string, name: string, genre: string}[],
+ *  [STAGES.MOON_GROVE]: {time: string, type: string, name: string, genre: string}[],
+ *  [STAGES.ARCANE_LIBRARY]: {time: string, type: string, name: string, genre: string}[]
+ * }
+ * }}
  */
 const PROGRAM_DATA = {
-    [DAYS.FRIDAY]: {
+    [DAYS.FRIDAY]:   {
         [STAGES.HEART_OF_THE_KINGDOM]: [],
-        [STAGES.BUTTERFLY_GARDEN]: [],
-        [STAGES.MOON_GROVE]: [],
-        [STAGES.ARCANE_LIBRARY]: []
+        [STAGES.BUTTERFLY_GARDEN]:     [],
+        [STAGES.MOON_GROVE]:           [],
+        [STAGES.ARCANE_LIBRARY]:       []
     },
     [DAYS.SATURDAY]: {
         [STAGES.HEART_OF_THE_KINGDOM]: [],
-        [STAGES.BUTTERFLY_GARDEN]: [],
-        [STAGES.MOON_GROVE]: [],
-        [STAGES.ARCANE_LIBRARY]: []
+        [STAGES.BUTTERFLY_GARDEN]:     [],
+        [STAGES.MOON_GROVE]:           [],
+        [STAGES.ARCANE_LIBRARY]:       []
     },
-    [DAYS.SUNDAY]: {
+    [DAYS.SUNDAY]:   {
         [STAGES.HEART_OF_THE_KINGDOM]: [],
-        [STAGES.BUTTERFLY_GARDEN]: [],
-        [STAGES.MOON_GROVE]: [],
-        [STAGES.ARCANE_LIBRARY]: []
+        [STAGES.BUTTERFLY_GARDEN]:     [],
+        [STAGES.MOON_GROVE]:           [],
+        [STAGES.ARCANE_LIBRARY]:       []
     }
 }
 
 /**
- * @type {[{name: string, role: string, slot: string},{name: string, role: string, slot: string},{name: string, role: string, slot: string},{name: string, role: string, slot: string},{name: string, role: string, slot: string},null]}
+ * @type {{name: string, genre: string, slot: string, img: string?, special: boolean?}[]}
  */
 const SPECIAL_DJS = [
-    {name: 'DJ ???', role: 'Festival-Musik', slot: 'Sa · Heart of the Kingdom', special: true},
-    {name: 'DJ ???', role: 'Festival-Musik', slot: 'Sa · Heart of the Kingdom', special: true}
+    {name: 'DJ ???', genre: 'Festival-Musik', slot: 'Sa · Heart of the Kingdom', special: true},
+    {name: 'DJ ???', genre: 'Festival-Musik', slot: 'Sa · Heart of the Kingdom', special: true}
 ]
 
 /**
- * @type {[{name: string, role: string, slot: string},{name: string, role: string, slot: string},{name: string, role: string, slot: string},{name: string, role: string, slot: string},{name: string, role: string, slot: string},null]}
+ * @type {{name: string, genre: string, slot: string, img: string?, special: boolean?}[]}
  */
 const DJS = [
-    {name: 'DJ ???', role: 'Party-Musik', slot: 'Fr · Heart of the Kingdom'},
-    {name: 'DJ ???', role: 'Party-Musik', slot: 'Fr · Heart of the Kingdom'},
-    {name: 'DJ ???', role: 'Party-Musik', slot: 'Sa · Butterfly Garden'},
-    {name: 'DJ ???', role: 'Party-Musik', slot: 'Sa · Moon Grove'},
-    {name: 'DJ ???', role: 'Party-Musik', slot: 'So · Arcane Library'},
-    {name: 'DJ ???', role: 'Party-Musik', slot: 'Fr · Butterfly Garden'},
-    {name: 'DJ ???', role: 'Party-Musik', slot: 'Sa · Moon Grove'},
-    {name: 'DJ ???', role: 'Party-Musik', slot: 'Sa · Moon Grove'},
-    {name: 'DJ ???', role: 'Party-Musik', slot: 'So · Arcane Library'}
+    {name: 'DJ ???', genre: 'Party-Musik', slot: 'Fr · Heart of the Kingdom'},
+    {name: 'DJ ???', genre: 'Party-Musik', slot: 'Fr · Heart of the Kingdom'},
+    {name: 'DJ ???', genre: 'Party-Musik', slot: 'Sa · Butterfly Garden'},
+    {name: 'DJ ???', genre: 'Party-Musik', slot: 'Sa · Moon Grove'},
+    {name: 'DJ ???', genre: 'Party-Musik', slot: 'So · Arcane Library'},
+    {name: 'DJ ???', genre: 'Party-Musik', slot: 'Fr · Butterfly Garden'},
+    {name: 'DJ ???', genre: 'Party-Musik', slot: 'Sa · Moon Grove'},
+    {name: 'DJ ???', genre: 'Party-Musik', slot: 'Sa · Moon Grove'},
+    {name: 'DJ ???', genre: 'Party-Musik', slot: 'So · Arcane Library'}
 ]
 
 /**
- * @type {[{name: string, role: string, slot: string},{name: string, role: string, slot: string},{name: string, role: string, slot: string}]}
+ * @type {{name: string, genre: string, slot: string, img: string?, special: boolean?}[]}
  */
 const SPECIAL_LIVE_ACTS = [
-    {name: '???', role: 'Mitreißende Hits', slot: 'Sa · Heart of the Kingdom', special: true},
-    {name: '???', role: 'Mitreißende Hits', slot: 'Sa · Heart of the Kingdom', special: true}
+    {name: '???', genre: 'Mitreißende Hits', slot: 'Sa · Heart of the Kingdom', special: true},
+    {name: '???', genre: 'Mitreißende Hits', slot: 'Sa · Heart of the Kingdom', special: true}
 ]
 
 /**
- * @type {[{name: string, role: string, slot: string},{name: string, role: string, slot: string},{name: string, role: string, slot: string}]}
+ * @type {{name: string, genre: string, slot: string, img: string?, special: boolean?}[]}
  */
 const LIVE_ACTS = [
-    {name: '???', role: 'Partylaune!', slot: 'Sa · Butterfly Garden'},
-    {name: '???', role: 'Partylaune!', slot: 'So · Moon Grove'},
-    {name: '???', role: 'Partylaune!', slot: 'So · Moon Grove'},
-    {name: '???', role: 'Partylaune!', slot: 'Fr · Arcane Library'},
-    {name: '???', role: 'Partylaune!', slot: 'Sa · Butterfly Garden'},
-    {name: '???', role: 'Partylaune!', slot: 'Fr · Arcane Library'},
-    {name: '???', role: 'Partylaune!', slot: 'Fr · Arcane Library'},
-    {name: '???', role: 'Partylaune!', slot: 'Sa · Butterfly Garden'},
-    {name: '???', role: 'Partylaune!', slot: 'So · Moon Grove'}
+    {name: '???', genre: 'Partylaune!', slot: 'Sa · Butterfly Garden'},
+    {name: '???', genre: 'Partylaune!', slot: 'So · Moon Grove'},
+    {name: '???', genre: 'Partylaune!', slot: 'So · Moon Grove'},
+    {name: '???', genre: 'Partylaune!', slot: 'Fr · Arcane Library'},
+    {name: '???', genre: 'Partylaune!', slot: 'Sa · Butterfly Garden'},
+    {name: '???', genre: 'Partylaune!', slot: 'Fr · Arcane Library'},
+    {name: '???', genre: 'Partylaune!', slot: 'Fr · Arcane Library'},
+    {name: '???', genre: 'Partylaune!', slot: 'Sa · Butterfly Garden'},
+    {name: '???', genre: 'Partylaune!', slot: 'So · Moon Grove'}
 ]
 
 /**
  * @type {{"Festival-Leitung": [{name: string, image: boolean},{name: string, image: boolean}], Bauplaner: [{name: string, image: boolean},{name: string, image: boolean},{name: string, image: boolean},{name: string, image: boolean},{name: string, image: boolean}], "Security & Beh&ouml;rden": [{name: string, image: boolean},{name: string, image: boolean},{name: string, image: boolean}], DJs: [{name: string, image: boolean},{name: string, image: boolean},{name: string, image: boolean}], "Live-Acts": [{name: string, image: boolean},{name: string, image: boolean},{name: string, image: boolean}], Catering: [{name: string, image: boolean}], Activities: [{name: string, image: boolean},{name: string, image: boolean}], Multitalente: [{name: string, image: boolean},{name: string, image: boolean}]}}
  */
 const TEAM_MEMBERS = {
-    "Festival-Leitung": [
+    "Festival-Leitung":         [
         {"name": "Noah", "image": true},
         {"name": "Jessy", "image": true}
     ],
-    "Bauplaner": [
+    "Bauplaner":                [
         {"name": "Noah", "image": true},
         {"name": "Ryu", "image": true},
         {"name": "Alice", "image": true},
@@ -105,24 +124,24 @@ const TEAM_MEMBERS = {
         {"name": "Lutzi", "image": true},
         {"name": "Cooper", "image": true}
     ],
-    "DJs": [
+    "DJs":                      [
         {"name": "Kalea", "image": true},
         {"name": "Dexter", "image": true},
         {"name": "Emilia", "image": true}
     ],
-    "Live-Acts": [
+    "Live-Acts":                [
         {"name": "John", "image": true},
         {"name": "River", "image": true},
         {"name": "Maria", "image": false}
     ],
-    "Catering": [
+    "Catering":                 [
         {"name": "Suzune", "image": true}
     ],
-    "Activities": [
+    "Activities":               [
         {"name": "Jessy", "image": true},
         {"name": "Millie", "image": true}
     ],
-    "Multitalente": [
+    "Multitalente":             [
         {"name": "Ryu", "image": true}
     ],
 }
@@ -135,7 +154,7 @@ window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.
 document.querySelectorAll('[data-toggle-drop]').forEach(btn => {
     btn.addEventListener('click', (e) => {
         e.stopPropagation()
-        const item = btn.closest('.nav-item')
+        const item    = btn.closest('.nav-item')
         const wasOpen = item.classList.contains('open')
         document.querySelectorAll('.nav-item.open').forEach(i => i.classList.remove('open'))
         if (!wasOpen) item.classList.add('open')
@@ -166,21 +185,21 @@ document.querySelectorAll('[data-target]').forEach(el => {
 // ---------- stars ----------
 const starsEl = document.getElementById('stars')
 for (let i = 0; i < 60; i++) {
-    const s = document.createElement('div')
-    s.className = 'star'
-    s.style.left = Math.random() * 100 + '%'
-    s.style.top = Math.random() * 55 + '%'
+    const s                = document.createElement('div')
+    s.className            = 'star'
+    s.style.left           = Math.random() * 100 + '%'
+    s.style.top            = Math.random() * 55 + '%'
     s.style.animationDelay = (Math.random() * 3.5) + 's'
     starsEl.appendChild(s)
 }
 // ---------- fireflies ----------
 const flyEl = document.getElementById('fireflies')
 for (let i = 0; i < 14; i++) {
-    const f = document.createElement('div')
-    f.className = 'firefly'
-    f.style.left = (10 + Math.random() * 80) + '%'
-    f.style.top = (40 + Math.random() * 45) + '%'
-    f.style.animationDelay = (Math.random() * 9) + 's'
+    const f                   = document.createElement('div')
+    f.className               = 'firefly'
+    f.style.left              = (10 + Math.random() * 80) + '%'
+    f.style.top               = (40 + Math.random() * 45) + '%'
+    f.style.animationDelay    = (Math.random() * 9) + 's'
     f.style.animationDuration = (7 + Math.random() * 5) + 's'
     flyEl.appendChild(f)
 }
@@ -221,11 +240,15 @@ function renderDay(day) {
     let col, items
     stageGrid.innerHTML = ''
     STAGE_NAMES.forEach(stage => {
-        col = document.createElement('div')
+        col           = document.createElement('div')
         col.className = 'stage-col'
         if (PROGRAM_DATA[day].hasOwnProperty(stage) && PROGRAM_DATA[day][stage].length > 0) {
-            items = (PROGRAM_DATA[day][stage]).map(item =>
-                `<div class="tl-item"><div class="tl-time">${item.time}</div><div class="tl-icon">${item.icon}</div><div class="tl-body"><h4>${item.title}</h4><p>${item.desc}</p></div></div>`
+            items = (PROGRAM_DATA[day][stage]).map(
+                /**
+                 * @param {{time: string, type: string, name: string, genre: string}} artist
+                 */
+                artist =>
+                    `<div class="tl-item"><div class="tl-time">${artist.time}</div><div class="tl-icon">${artist.type === "dj" ? "🎧" : "🎤"}</div><div class="tl-body"><h4>${artist.name}</h4><p>${artist.genre}</p></div></div>`
             ).join('')
         } else {
             items = '<p style="color:#a894c4;font-size:.85rem;text-align:center;">Programm folgt</p>'
@@ -249,7 +272,7 @@ document.querySelectorAll('.day-tab').forEach(tab => {
 
 /**
  * @param {string} id
- * @param {[{name: string, role: string, slot: string, img: string?, special: boolean?}]} items
+ * @param {{name: string, genre: string, slot: string, img: string?, special: boolean?}[]} items
  * @param {string} type Entweder "dj" oder "live"
  */
 function fillGrid(id, items, type) {
@@ -272,7 +295,7 @@ function fillGrid(id, items, type) {
             ${borderImage}
         </div>
       <h4>${a.name}</h4>
-      <div class="role">${a.role}</div>
+      <div class="role">${a.genre}</div>
       <div class="slot">${a.slot || ''}</div>
     </div>`
     }).join('')
