@@ -1,21 +1,36 @@
 const STAGES = {
     HEART_OF_THE_KINGDOM: 'Heart of the Kingdom',
-    BUTTERFLY_GARDEN: 'Butterfly Garden',
-    MOON_GROVE: 'Moon Grove',
-    ARCANE_LIBRARY: 'Arcane Library'
+    BUTTERFLY_GARDEN:     'Butterfly Garden',
+    MOON_GROVE:           'Moon Grove',
+    ARCANE_LIBRARY:       'Arcane Library',
+    ACTIVITY_STAGE:       'Activity Stage',
+    EVERLAND_GROUND:      'Everland Gelände'
 }
 
 const DAYS = {
-    FRIDAY: "Freitag",
+    FRIDAY:   "Freitag",
     SATURDAY: "Samstag",
-    SUNDAY: "Sonntag"
+    SUNDAY:   "Sonntag"
 }
 
-const STAGE_NAMES = [STAGES.HEART_OF_THE_KINGDOM, STAGES.ARCANE_LIBRARY, STAGES.MOON_GROVE, STAGES.BUTTERFLY_GARDEN]
+const ARTIST_STAGE_NAMES   = [STAGES.HEART_OF_THE_KINGDOM, STAGES.ARCANE_LIBRARY, STAGES.MOON_GROVE, STAGES.BUTTERFLY_GARDEN]
+const ACTIVITY_STAGE_NAMES = [STAGES.ACTIVITY_STAGE, STAGES.EVERLAND_GROUND]
+
+const ICONS_FOR_TIMETABLE = {
+    "dj":             "🎧",
+    "live":           "🎤",
+    "werewolves":     "🐺",
+    "drawing":        "🎨",
+    "yoga":           "🧘",
+    "dancing":        "🕺",
+    "outfit-contest": "🏆",
+    "dream":          "💭",
+    "boxing":         "🥊",
+    "cards":          "🎴",
+    "black-stories":  "📓"
+}
 
 /**
- * TODO: Platzhalter-Programm durch echtes Line-Up ersetzen.
- *
  * @type {{
  * [DAYS.FRIDAY]: {
  *  [STAGES.HEART_OF_THE_KINGDOM]: {time: string, type: string, name: string, genre: string}[],
@@ -46,7 +61,7 @@ const PROGRAM_DATA = {
             {time: "21:00", type: "dj", name: "Vexx", genre: "Techno / Schranz"},
             {time: "22:30", type: "dj", name: "Maus", genre: "Techno"}
         ],
-        [STAGES.ARCANE_LIBRARY]: [
+        [STAGES.ARCANE_LIBRARY]:       [
             {time: "19:00", type: "live", name: "Xavi", genre: "???"},
             {time: "19:30", type: "live", name: "Chloe", genre: "Balladen"},
             {time: "20:00", type: "live", name: "HUSH", genre: "Hardrock, Metal"},
@@ -56,7 +71,7 @@ const PROGRAM_DATA = {
             {time: "23:00", type: "live", name: "Auntie Whitney", genre: "Jazz, Soul"},
             {time: "23:30", type: "live", name: "ONLY K.O.", genre: "HipHop, Boom Bap, Oldschool Beats"}
         ],
-        [STAGES.MOON_GROVE]: [
+        [STAGES.MOON_GROVE]:           [
             {time: "17:00", type: "dj", name: "Kaayaal", genre: "Heutige Hits (Club Mix)"},
             {time: "18:00", type: "dj", name: "Zoria", genre: "80er - 2000er"},
             {time: "19:30", type: "dj", name: "Oceana", genre: "House & 2010er Remixe"},
@@ -64,11 +79,17 @@ const PROGRAM_DATA = {
             {time: "22:00", type: "dj", name: "Aura Nights", genre: "House"},
             {time: "23:00", type: "dj", name: "Sync´d Souls", genre: "House"}
         ],
-        [STAGES.BUTTERFLY_GARDEN]: [
+        [STAGES.BUTTERFLY_GARDEN]:     [
             {time: "17:30", type: "dj", name: "DJ Jar", genre: "J-Pop"},
             {time: "19:00", type: "dj", name: "DJ Obscura", genre: "???"},
             {time: "20:30", type: "dj", name: "Bohne Frei", genre: "Rock / Metal"},
             {time: "22:00", type: "dj", name: "Emotional Damage", genre: "Punkrock"}
+        ],
+        [STAGES.ACTIVITY_STAGE]:       [
+            {time: "23:30 - 00:30", type: "activity", name: "Werwölfe", genre: "Wem kannst du wirklich vertrauen?"}
+        ],
+        [STAGES.EVERLAND_GROUND]:      [
+            {time: "21:30 - 22:30", type: "drawing", name: "Star Brush", genre: "Lass dich oder deine liebsten Zeichnen"}
         ]
     },
 
@@ -86,7 +107,7 @@ const PROGRAM_DATA = {
             {time: "23:00", type: "dj", name: "Skully n Bone", genre: "Hardtechno"}
         ],
 
-        [STAGES.ARCANE_LIBRARY]: [
+        [STAGES.ARCANE_LIBRARY]:   [
             {time: "12:00", type: "live", name: "Fehnfieber", genre: "Piano"},
             {time: "14:00", type: "live", name: "Der weiße Drache", genre: "???"},
             {time: "14:30", type: "live", name: "Jarvis", genre: "Rap"},
@@ -104,7 +125,7 @@ const PROGRAM_DATA = {
             {time: "22:30", type: "live", name: "Ruby McMahon", genre: "???"},
             {time: "23:00", type: "live", name: "Tatsuya", genre: "???"}
         ],
-        [STAGES.MOON_GROVE]: [
+        [STAGES.MOON_GROVE]:       [
             {time: "00:00", type: "dj", name: "Sync´d Souls", genre: "???"},
             {time: "01:00", type: "dj", name: "Db", genre: "House"},
             {time: "14:00", type: "dj", name: "Open DJ-Pult", genre: "???"},
@@ -127,6 +148,17 @@ const PROGRAM_DATA = {
             {time: "19:30", type: "dj", name: "DJ Xavi", genre: "Latin"},
             {time: "20:30", type: "dj", name: "Mo", genre: "HipHop"},
             {time: "22:00", type: "dj", name: "Hari", genre: "Metal"}
+        ],
+        [STAGES.ACTIVITY_STAGE]:   [
+            {time: "12:00 - 13:00", type: "yoga", name: "Yoga", genre: "Entspannung im Festival-Alltag"},
+            {time: "14:00 - 15:00", type: "dancing", name: "Paartänze", genre: "Wie tanzt man eigentlich richtig gemeinsam?"},
+            {time: "15:00 - 17:00", type: "outfit-contest", name: "Outfit-Wettbewerb", genre: "Das beste, wildeste oder praktischste Festival-Outfit? All das gibt es hier"},
+            {time: "17:00 - 18:00", type: "dream", name: "Traumreisen", genre: "Abschalten, aktiv und geleitet den Geist treiben lassen"},
+            {time: "19:00 - 20:00", type: "dancing", name: "Poledance", genre: "Normales Tanzen ist euch zu langweilig? Dann kommt vorbei"}
+        ],
+        [STAGES.EVERLAND_GROUND]:  [
+            {time: "21:30 - 22:30", type: "drawing", name: "Star Brush", genre: "Lass dich oder deine liebsten Zeichnen"},
+            {time: "23:00 - 01:00", type: "drawing", name: "Kiu", genre: "Lass dich oder deine liebsten Zeichnen"},
         ]
     },
 
@@ -139,15 +171,15 @@ const PROGRAM_DATA = {
             {time: "12:00", type: "dj", name: "DJ Moonlight", genre: "Latin"},
             {time: "13:30", type: "dj", name: "Großes Finale", genre: "Everland: A World Beyond"}
         ],
-        [STAGES.ARCANE_LIBRARY]: [
+        [STAGES.ARCANE_LIBRARY]:       [
             {time: "00:00", type: "live", name: "Jarvis", genre: "Rap"},
             {time: "00:30", type: "live", name: "404UNK & Friends", genre: "Rap"}
         ],
-        [STAGES.MOON_GROVE]: [
+        [STAGES.MOON_GROVE]:           [
             {time: "00:00", type: "dj", name: "DJ Street", genre: "80er-2000er"},
             {time: "00:30", type: "dj", name: "DJ JAR", genre: "Mainstream-Pop"}
         ],
-        [STAGES.BUTTERFLY_GARDEN]: [
+        [STAGES.BUTTERFLY_GARDEN]:     [
             {time: "00:00", type: "dj", name: "N-Tec", genre: "House"}
         ]
     }
@@ -240,11 +272,11 @@ const LIVE_ACTS = [
  * @type {{"Festival-Leitung": [{name: string, image: boolean},{name: string, image: boolean}], Bauplaner: [{name: string, image: boolean},{name: string, image: boolean},{name: string, image: boolean},{name: string, image: boolean},{name: string, image: boolean}], "Security & Beh&ouml;rden": [{name: string, image: boolean},{name: string, image: boolean},{name: string, image: boolean}], DJs: [{name: string, image: boolean},{name: string, image: boolean},{name: string, image: boolean}], "Live-Acts": [{name: string, image: boolean},{name: string, image: boolean},{name: string, image: boolean}], Catering: [{name: string, image: boolean}], Activities: [{name: string, image: boolean},{name: string, image: boolean}], Multitalente: [{name: string, image: boolean},{name: string, image: boolean}]}}
  */
 const TEAM_MEMBERS = {
-    "Festival-Leitung": [
+    "Festival-Leitung":         [
         {"name": "Noah", "image": true},
         {"name": "Jessy", "image": true}
     ],
-    "Bauplaner": [
+    "Bauplaner":                [
         {"name": "Noah", "image": true},
         {"name": "Ryu", "image": true},
         {"name": "Alice", "image": true},
@@ -256,24 +288,24 @@ const TEAM_MEMBERS = {
         {"name": "Lutzi", "image": true},
         {"name": "Cooper", "image": true}
     ],
-    "DJs": [
+    "DJs":                      [
         {"name": "Kalea", "image": true},
         {"name": "Dexter", "image": true},
         {"name": "Emilia", "image": true}
     ],
-    "Live-Acts": [
+    "Live-Acts":                [
         {"name": "John", "image": true},
         {"name": "River", "image": true},
         {"name": "Maria", "image": false}
     ],
-    "Catering": [
+    "Catering":                 [
         {"name": "Suzune", "image": true}
     ],
-    "Activities": [
+    "Activities":               [
         {"name": "Jessy", "image": true},
         {"name": "Millie", "image": true}
     ],
-    "Multitalente": [
+    "Multitalente":             [
         {"name": "Ryu", "image": true}
     ],
 }
@@ -286,7 +318,7 @@ window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.
 document.querySelectorAll('[data-toggle-drop]').forEach(btn => {
     btn.addEventListener('click', (e) => {
         e.stopPropagation()
-        const item = btn.closest('.nav-item')
+        const item    = btn.closest('.nav-item')
         const wasOpen = item.classList.contains('open')
         document.querySelectorAll('.nav-item.open').forEach(i => i.classList.remove('open'))
         if (!wasOpen) item.classList.add('open')
@@ -317,21 +349,21 @@ document.querySelectorAll('[data-target]').forEach(el => {
 // ---------- stars ----------
 const starsEl = document.getElementById('stars')
 for (let i = 0; i < 60; i++) {
-    const s = document.createElement('div')
-    s.className = 'star'
-    s.style.left = Math.random() * 100 + '%'
-    s.style.top = Math.random() * 55 + '%'
+    const s                = document.createElement('div')
+    s.className            = 'star'
+    s.style.left           = Math.random() * 100 + '%'
+    s.style.top            = Math.random() * 55 + '%'
     s.style.animationDelay = (Math.random() * 3.5) + 's'
     starsEl.appendChild(s)
 }
 // ---------- fireflies ----------
 const flyEl = document.getElementById('fireflies')
 for (let i = 0; i < 14; i++) {
-    const f = document.createElement('div')
-    f.className = 'firefly'
-    f.style.left = (10 + Math.random() * 80) + '%'
-    f.style.top = (40 + Math.random() * 45) + '%'
-    f.style.animationDelay = (Math.random() * 9) + 's'
+    const f                   = document.createElement('div')
+    f.className               = 'firefly'
+    f.style.left              = (10 + Math.random() * 80) + '%'
+    f.style.top               = (40 + Math.random() * 45) + '%'
+    f.style.animationDelay    = (Math.random() * 9) + 's'
     f.style.animationDuration = (7 + Math.random() * 5) + 's'
     flyEl.appendChild(f)
 }
@@ -366,37 +398,52 @@ document.querySelectorAll('.faq-item').forEach(item => {
 })
 
 // ---------- Timetable ----------
-const stageGrid = document.getElementById('stageGrid')
-
-function renderDay(day) {
+/**
+ * @param {string} day
+ * @param {HTMLElement} timetableGrid
+ * @param {string[]} stages
+ */
+function renderDayForTimetable(day, timetableGrid, stages) {
     let col, items
-    stageGrid.innerHTML = ''
-    STAGE_NAMES.forEach(stage => {
-        col = document.createElement('div')
+    timetableGrid.innerHTML = ''
+    stages.forEach(stage => {
+        col           = document.createElement('div')
         col.className = 'stage-col'
         if (PROGRAM_DATA[day].hasOwnProperty(stage) && PROGRAM_DATA[day][stage].length > 0) {
             items = (PROGRAM_DATA[day][stage]).map(
                 /**
-                 * @param {{time: string, type: string, name: string, genre: string}} artist
+                 * @param {{time: string, type: string, name: string, genre: string}} entry
                  */
-                artist =>
-                    `<div class="tl-item"><div class="tl-time">${artist.time}</div><div class="tl-icon">${artist.type === "dj" ? "🎧" : "🎤"}</div><div class="tl-body"><h4>${artist.name}</h4><p>${artist.genre}</p></div></div>`
+                entry =>
+                    `<div class="tl-item"><div class="tl-time">${entry.time}</div><div class="tl-icon">${ICONS_FOR_TIMETABLE[entry.type] ?? "❔"}</div><div class="tl-body"><h4>${entry.name}</h4><p>${entry.genre}</p></div></div>`
             ).join('')
         } else {
             items = '<p style="color:#a894c4;font-size:.85rem;text-align:center;">Programm folgt</p>'
         }
         col.innerHTML = `<h3>${stage}</h3>${items}`
-        stageGrid.appendChild(col)
+        timetableGrid.appendChild(col)
     })
 }
 
-renderDay(DAYS.FRIDAY)
+const stageGrid = document.getElementById('stageGrid')
+renderDayForTimetable(DAYS.FRIDAY, stageGrid, ARTIST_STAGE_NAMES)
 
-document.querySelectorAll('.day-tab').forEach(tab => {
+document.querySelectorAll('#artistTimetable .day-tab').forEach(tab => {
     tab.addEventListener('click', () => {
-        document.querySelectorAll('.day-tab').forEach(t => t.classList.remove('active'))
+        document.querySelectorAll('#artistTimetable .day-tab').forEach(t => t.classList.remove('active'))
         tab.classList.add('active')
-        renderDay(tab.dataset.day)
+        renderDayForTimetable(tab.dataset.day, stageGrid, ARTIST_STAGE_NAMES)
+    })
+})
+
+const activityGrid = document.getElementById('activityGrid')
+renderDayForTimetable(DAYS.FRIDAY, activityGrid, ACTIVITY_STAGE_NAMES)
+
+document.querySelectorAll('#activityTimetable .day-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+        document.querySelectorAll('#activityTimetable .day-tab').forEach(t => t.classList.remove('active'))
+        tab.classList.add('active')
+        renderDayForTimetable(tab.dataset.day, activityGrid, ACTIVITY_STAGE_NAMES)
     })
 })
 
