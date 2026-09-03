@@ -164,7 +164,7 @@ const PROGRAM_DATA = {
             {time: "19:00 - 20:00", type: "dancing", name: "Poledance", genre: "Normales Tanzen ist euch zu langweilig? Dann kommt vorbei"}
         ],
         [STAGES.EVERLAND_GROUND]:      [
-            {time: "12:00 - 13:00", type: "sports", name: "Enchanted Workout", genre: "Fit sein ist wichtig!"},
+            {time: "12:00 - 13:00", type: "sports", name: "Butterfly Garden | Enchanted Workout", genre: "Fit sein ist wichtig!"},
             {time: "13:00 - 14:00", type: "water", name: "Aquafitness", genre: "See | Fitness und kühles Nass in einem? Was will man mehr?"},
             {time: "14:00 - 16:00", type: "witch", name: "Schnitzeljagd", genre: "Mit der Herbal Witchery. Was man dabei wohl so findet?"},
             {time: "17:00 - 18:00", type: "boxing", name: "Boxen", genre: "Boxring | Sich (geordnet) abreagieren und dabei noch Sport machen? Ab zum Boxen!"},
