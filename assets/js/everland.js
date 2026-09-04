@@ -68,31 +68,41 @@ const PROGRAM_DATA = {
             {time: "18:30", type: "dj", name: "SetteSensi", genre: "Techno"},
             {time: "20:00", type: "dj", name: "Sonic Pain", genre: "Hardstyle / Hardtechno"},
             {time: "21:00", type: "dj", name: "Vexx", genre: "Techno / Schranz"},
-            {time: "22:30", type: "dj", name: "???", genre: "Techno"}
+            {time: "22:30", type: "dj", name: "???", genre: "EDM"},
+            {time: "00:00", type: "dj", name: "NLYNX", genre: "Epische Festival-Klänge"},
+            {time: "01:00", type: "dj", name: "Triple T.", genre: "Techno"},
+            {time: "02:00", type: "dj", name: "DJ N-Tec", genre: "Techno"},
+            {time: "03:00", type: "dj", name: "DJ Xavi", genre: "Techno / Hardstyle"}
         ],
         [STAGES.ARCANE_LIBRARY]:       [
             {time: "19:00", type: "live", name: "Xavi", genre: "Latin"},
             {time: "19:30", type: "live", name: "Chloe", genre: "Balladen"},
-            {time: "20:00", type: "live", name: "HUSH", genre: "Hardrock, Metal"},
+            {time: "20:00", type: "live", name: "G!ANN!", genre: "Rap, Pop"},
             {time: "20:30", type: "live", name: "Silenzio", genre: "Klavier, ruhig bis schneller"},
-            {time: "21:30", type: "live", name: "G!ANN!", genre: "Rap, Pop"},
+            {time: "21:30", type: "live", name: "HUSH", genre: "Hardrock, Metal"},
             {time: "22:00", type: "live", name: "KIKI", genre: "J-Pop, JazzPop"},
-            {time: "23:00", type: "live", name: "Auntie Whitney", genre: "Jazz, Soul"},
-            {time: "23:30", type: "live", name: "ONLY K.O.", genre: "HipHop, Boom Bap, Oldschool Beats"}
+            {time: "23:00", type: "live", name: "aMillie", genre: "Rock, Pop, Indie, Soul, R&B"},
+            {time: "23:30", type: "live", name: "OTP", genre: "HipHop / RNB / Trap"},
+            {time: "00:30", type: "live", name: "Auntie Whitney", genre: "Gospel, Jazz, Soul"},
+            {time: "01:00", type: "live", name: "ONLY K.O.", genre: "HipHop, Boom Bap, Oldschool Beats"},
+            {time: "01:30", type: "live", name: "Clip9", genre: "Rap"},
+            {time: "02:00", type: "live", name: "Jane Doe", genre: "Darkpop, Acoustic"}
         ],
         [STAGES.MOON_GROVE]:           [
             {time: "17:00", type: "dj", name: "Kaayaal", genre: "Heutige Hits (Club Mix)"},
             {time: "18:00", type: "dj", name: "Zoria", genre: "80er - 2000er"},
             {time: "19:30", type: "dj", name: "Oceana", genre: "House & 2010er Remixe"},
-            {time: "21:00", type: "dj", name: "Ardent Luna", genre: "EDM"},
+            {time: "21:00", type: "dj", name: "Kaayaal", genre: "Heutige Hits (Club Mix)"},
             {time: "22:00", type: "dj", name: "Aura Nights", genre: "House"},
-            {time: "23:00", type: "dj", name: "Sync´d Souls", genre: "House"}
+            {time: "23:00", type: "dj", name: "Sync´d Souls", genre: "House"},
+            {time: "01:00", type: "dj", name: "Db", genre: "House"}
         ],
         [STAGES.BUTTERFLY_GARDEN]:     [
             {time: "17:30", type: "dj", name: "DJ Jar", genre: "J-Pop"},
             {time: "19:00", type: "dj", name: "DJ Obscura", genre: "???"},
             {time: "20:30", type: "dj", name: "Bohne Frei", genre: "Rock / Metal"},
-            {time: "22:00", type: "dj", name: "Emotional Damage", genre: "Punkrock"}
+            {time: "22:00", type: "dj", name: "Emotional Damage", genre: "Punkrock"},
+            {time: "00:30", type: "dj", name: "Black Tiger", genre: "80s-90s"}
         ],
         [STAGES.ACTIVITY_STAGE]:       [
             {time: "23:30 - 00:30", type: "werewolves", name: "Werwölfe", genre: "Wem kannst du wirklich vertrauen?"}
@@ -103,39 +113,38 @@ const PROGRAM_DATA = {
     },
     [DAYS.SATURDAY]: {
         [STAGES.HEART_OF_THE_KINGDOM]: [
-            {time: "00:00", type: "dj", name: "NLYNX", genre: "Epische Festival-Klänge"},
-            {time: "01:00", type: "dj", name: "Triple T.", genre: "Techno"},
-            {time: "02:00", type: "dj", name: "DJ N-Tec", genre: "Techno"},
-            {time: "03:00", type: "dj", name: "DJ Xavi", genre: "Techno / Hardstyle"},
             {time: "14:30", type: "dj", name: "DJ Orochi", genre: "Bounce / Mashups"},
             {time: "16:30", type: "dj", name: "Djane Moonlight", genre: "Techno"},
             {time: "18:00", type: "dj", name: "Ardent Luna", genre: "Techno"},
             {time: "19:00", type: "dj", name: "DJ Aura Nights", genre: "Techno"},
             {time: "21:00", type: "dj", name: "DJ Zoria", genre: "BigRoom"},
-            {time: "23:00", type: "dj", name: "Skully n Bone", genre: "Hardtechno"}
+            {time: "23:00", type: "dj", name: "Skully n Bone", genre: "Hardtechno"},
+            {time: "00:00", type: "dj", name: "Saijin", genre: "Schranz / Melodic"},
+            {time: "01:30", type: "dj", name: "Vanilla", genre: "Hardtechno / Industrialtechno"},
+            {time: "03:00", type: "dj", name: "Oceana", genre: "Techno / Elektro"}
         ],
         [STAGES.ARCANE_LIBRARY]:       [
             {time: "12:00", type: "live", name: "Fehnfieber", genre: "Piano"},
             {time: "14:00", type: "live", name: "Der weiße Drache", genre: "Lustige Musik"},
             {time: "14:30", type: "live", name: "Jarvis", genre: "Rap"},
             {time: "15:00", type: "live", name: "Millie", genre: "Soul"},
-            {time: "16:00", type: "live", name: "C7CTUS", genre: "Rap / Trap / R&B"},
+            {time: "16:00", type: "live", name: "404UNK & Friends", genre: "Rap"},
             {time: "16:30", type: "live", name: "Chay Latte", genre: "Gesang / Pop"},
             {time: "17:00", type: "live", name: "Blanche", genre: "Pop, Folk"},
             {time: "18:00", type: "live", name: "Dave P", genre: "Rap, Pop"},
             {time: "18:30", type: "live", name: "Keira Maguire", genre: "Pop, Folk"},
             {time: "19:00", type: "live", name: "TheRealRJ", genre: "Rap / HipHop / Pop"},
             {time: "20:00", type: "live", name: "JUMO", genre: "Geschichten mit der Gitarre"},
-            {time: "20:30", type: "live", name: "aMillie", genre: "Rock, Pop, Indie, Soul, R&B"},
+            {time: "20:30", type: "live", name: "C7CTUS", genre: "DJ / Rap / Trap / R&B"},
             {time: "21:00", type: "live", name: "C0LT", genre: "Rap"},
             {time: "22:00", type: "live", name: "Loraine Dunnaham", genre: "Soul-Pop, Jazz & Dark Blues"},
             {time: "22:30", type: "live", name: "Ruby", genre: "Pop"},
-            {time: "23:00", type: "live", name: "Tatsuya", genre: "Metalcore / Nu Metal"}
+            {time: "23:00", type: "live", name: "Tatsuya", genre: "Metalcore / Nu Metal"},
+            {time: "00:00", type: "live", name: "Jarvis", genre: "Rap"},
+            {time: "00:30", type: "live", name: "404UNK & Friends", genre: "Rap"}
         ],
         [STAGES.MOON_GROVE]:           [
-            {time: "00:00", type: "dj", name: "Sync´d Souls", genre: "House"},
-            {time: "01:00", type: "dj", name: "Db", genre: "House"},
-            {time: "14:00", type: "dj", name: "Open DJ-Pult", genre: "Unendliche Möglichkeiten"},
+            {time: "12:00", type: "dj", name: "Open DJ-Pult", genre: "Unendliche Möglichkeiten"},
             {time: "15:00", type: "dj", name: "DJ Kayaal", genre: "80er - 2000er"},
             {time: "16:00", type: "dj", name: "Sonic Pain", genre: "Workout-Mix"},
             {time: "17:30", type: "dj", name: "Vexx", genre: "Trance / Psytrance"},
@@ -143,18 +152,19 @@ const PROGRAM_DATA = {
             {time: "19:30", type: "dj", name: "SetteSensi", genre: "House"},
             {time: "20:30", type: "dj", name: "???", genre: "EDM"},
             {time: "21:30", type: "dj", name: "Triple T", genre: "Dance-Pop"},
-            {time: "23:00", type: "dj", name: "DJ Street", genre: "80er-2000er"}
+            {time: "23:00", type: "dj", name: "DJ Street", genre: "80er-2000er"},
+            {time: "00:30", type: "dj", name: "DJ JAR", genre: "Mainstream-Pop"}
         ],
         [STAGES.BUTTERFLY_GARDEN]:     [
-            {time: "00:00", type: "dj", name: "Emotional Damage", genre: "Punkrock"},
-            {time: "00:30", type: "dj", name: "Black Tiger", genre: "80s-90s"},
-            {time: "14:30", type: "dj", name: "DJ Street", genre: "???"},
+            {time: "12:00", type: "dj", name: "Open DJ-Pult", genre: "Unendliche Möglichkeiten"},
+            {time: "14:00", type: "dj", name: "DJ Street", genre: "???"},
             {time: "16:00", type: "dj", name: "Bohne Frei", genre: "Chill / Club House"},
             {time: "17:30", type: "dj", name: "Zoria", genre: "???"},
             {time: "18:30", type: "dj", name: "Oceana", genre: "Epic"},
             {time: "19:30", type: "dj", name: "DJ Xavi", genre: "Latin"},
             {time: "20:30", type: "dj", name: "Mo", genre: "HipHop"},
-            {time: "22:00", type: "dj", name: "Hari", genre: "Metal"}
+            {time: "22:00", type: "dj", name: "Hari", genre: "Metal"},
+            {time: "00:00", type: "dj", name: "N-Tec", genre: "House"}
         ],
         [STAGES.ACTIVITY_STAGE]:       [
             {time: "12:00 - 13:00", type: "yoga", name: "Yoga", genre: "Entspannung im Festival-Alltag"},
@@ -171,7 +181,7 @@ const PROGRAM_DATA = {
             {time: "17:00 - 19:00", type: "drawing", name: "Pastelpeach", genre: "Zeichenplatz | Lass dich oder deine liebsten Zeichnen"},
             {time: "18:00 - 20:00", type: "cards", name: "Midnight Witch", genre: "Die Karten erzählen viele Dinge&hellip;"},
             {time: "19:00 - 20:00", type: "witch", name: "Schnitzeljagd", genre: "Mit der Herbal Witchery. Was man dabei wohl so findet?"},
-            {time: "20:00 - 21:00", type: "black-stories", name: "Black Stories", genre: "Ein Ball rollt um die Ecke und fällt um - warum?"},
+            {time: "20:00 - 21:00", type: "black-stories", name: "Dark Fairy Tales", genre: "Black Stories | Ein Ball rollt um die Ecke und fällt um - warum?"},
             {time: "21:30 - 22:30", type: "drawing", name: "Star Brush", genre: "Zeichenplatz | Lass dich oder deine liebsten Zeichnen"},
             {time: "23:00 - 01:00", type: "drawing", name: "Kiu", genre: "Zeichenplatz | Lass dich oder deine liebsten Zeichnen"}
         ]
@@ -179,26 +189,21 @@ const PROGRAM_DATA = {
 
     [DAYS.SUNDAY]: {
         [STAGES.HEART_OF_THE_KINGDOM]: [
-            {time: "00:00", type: "dj", name: "Saijin", genre: "Schranz / Melodic"},
-            {time: "01:30", type: "dj", name: "Vanilla", genre: "Hardtechno / Industrialtechno"},
-            {time: "03:00", type: "dj", name: "Oceana", genre: "Techno / Elektro"},
             {time: "11:00", type: "dj", name: "Open DJ-Pult", genre: "Unendliche Möglichkeiten"},
             {time: "12:00", type: "dj", name: "DJ Moonlight", genre: "Latin"},
-            {time: "13:30", type: "dj", name: "Großes Finale", genre: "Everland: A World Beyond"}
+            {time: "13:30", type: "dj", name: "Großes Finale", genre: "Everland:<br>A World Beyond"}
         ],
         [STAGES.ARCANE_LIBRARY]:       [
-            {time: "00:00", type: "live", name: "Jarvis", genre: "Rap"},
-            {time: "00:30", type: "live", name: "404UNK & Friends", genre: "Rap"}
+            {time: "ab 01:30", type: "live", name: "Stille", genre: "Auf dieser Bühne ist es zwar ruhig, aber das Festival ist noch nicht vorbei&hellip;"}
         ],
         [STAGES.MOON_GROVE]:           [
-            {time: "00:00", type: "dj", name: "DJ Street", genre: "80er-2000er"},
-            {time: "00:30", type: "dj", name: "DJ JAR", genre: "Mainstream-Pop"}
+            {time: "ab 02:30", type: "dj", name: "Stille", genre: "Auf dieser Bühne ist es zwar ruhig, aber das Festival ist noch nicht vorbei&hellip;"}
         ],
         [STAGES.BUTTERFLY_GARDEN]:     [
-            {time: "00:00", type: "dj", name: "N-Tec", genre: "House"}
+            {time: "ab 02:00", type: "dj", name: "Stille", genre: "Auf dieser Bühne ist es zwar ruhig, aber das Festival ist noch nicht vorbei&hellip;"}
         ],
         [STAGES.ACTIVITY_STAGE]:       [
-            {time: "00:00 - 23:59", type: "activity", name: "Stille", genre: "Auf dieser Bühne ist es zwar ruhig, aber das Festival ist noch nicht vorbei&hellip;"},
+            {time: "ab 00:00", type: "activity", name: "Stille", genre: "Auf dieser Bühne ist es zwar ruhig, aber das Festival ist noch nicht vorbei&hellip;"}
         ],
         [STAGES.EVERLAND_GROUND]:      [
             {time: "11:00 - 12:00", type: "witch", name: "Schnitzeljagd", genre: "Mit der Herbal Witchery. Was man dabei wohl so findet?"},
@@ -226,7 +231,7 @@ const DJS = [
     {name: 'DJ Aura Nights', genre: 'House | Techno', slot: 'Fr · Moon Grove | Sa · Heart of the Kingdom', img: 'Aura_Nights'},
     {name: 'Sync´d Souls', genre: 'House', slot: 'Fr · Moon Grove', img: 'Syncd_Souls'},
     {name: 'Skully n Bone', genre: 'Hardtechno', slot: 'Sa · Heart of the Kingdom', img: 'Skully_n_Bone'},
-    {name: '???', genre: 'Techno | EDM', slot: 'Fr · Heart of the Kingdom | Sa · Moon Grove', img: 'Mouse'},
+    {name: '???', genre: 'EDM', slot: 'Fr · Heart of the Kingdom | Sa · Moon Grove', img: 'Mouse'},
     {name: 'DJ Obscura', genre: '???', slot: 'Fr · Butterfly Garden | Sa · Moon Grove', img: 'Obscura'},
     {name: 'Djane Moonlight', genre: 'Techno | Latin', slot: 'Sa · Heart of the Kingdom | So · Heart of the Kingdom', img: 'Moonlight'},
     {name: 'Ardent Luna', genre: 'EDM | Techno', slot: 'Fr · Moon Grove | Sa · Heart of the Kingdom'},
@@ -280,8 +285,8 @@ const LIVE_ACTS = [
     {name: 'OTP Damage', genre: 'HipHop / RNB / Trap', slot: 'Sa · Arcane Library', img: 'OTP_Damage'},
     {name: 'OTP Greedy', genre: 'HipHop / RNB / Trap', slot: 'Sa · Arcane Library', img: 'OTP_Greedy'},
     {name: 'OTP Stunna', genre: 'HipHop / RNB / Trap', slot: 'Sa · Arcane Library', img: 'OTP_Stunna'},
-    {name: 'Auntie Whitney', genre: 'Jazz / Soul', slot: 'Fr · Arcane Library', img: 'Auntie_Whitney'},
-    {name: 'The Sisters', genre: 'Jazz / Soul', slot: 'Fr · Arcane Library', img: 'The_Sisters'},
+    {name: 'Auntie Whitney', genre: 'Gospel / Jazz / Soul', slot: 'Fr · Arcane Library', img: 'Auntie_Whitney'},
+    {name: 'The Sisters', genre: 'Gospel / Jazz / Soul', slot: 'Fr · Arcane Library', img: 'The_Sisters'},
     {name: 'ONLY K.O.', genre: 'HipHop / Boom Bap / Oldschool Beats', slot: 'Fr · Arcane Library', img: 'Only_KO'},
     {name: 'Jane Doe', genre: 'Darkpop, Acoustic', slot: 'Sa · Arcane Library', img: 'Jane_Doe'},
     {name: 'Blanche', genre: 'Pop, Folk', slot: 'Sa · Arcane Library', img: 'Blanche'},
