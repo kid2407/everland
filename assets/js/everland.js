@@ -129,7 +129,7 @@ const PROGRAM_DATA = {
             {time: "20:30", type: "live", name: "aMillie", genre: "Rock, Pop, Indie, Soul, R&B"},
             {time: "21:00", type: "live", name: "C0LT", genre: "Rap"},
             {time: "22:00", type: "live", name: "Loraine Dunnaham", genre: "Soul-Pop, Jazz & Dark Blues"},
-            {time: "22:30", type: "live", name: "Ruby McMahon", genre: "???"},
+            {time: "22:30", type: "live", name: "Ruby", genre: "Pop"},
             {time: "23:00", type: "live", name: "Tatsuya", genre: "Metalcore / Nu Metal"}
         ],
         [STAGES.MOON_GROVE]:           [
@@ -266,7 +266,7 @@ const LIVE_ACTS = [
     {name: 'Silenzio', genre: 'Klavier', slot: 'Fr · Arcane Library'},
     {name: 'G!ANN!', genre: 'Rap, Pop', slot: 'Fr · Arcane Library'},
     {name: 'Chloe', genre: 'Balladen', slot: 'Fr · Arcane Library', img: 'Chloe'},
-    {name: 'Ruby McMahon', genre: '???', slot: 'Sa · Arcane Library'},
+    {name: 'Ruby', genre: 'Pop', slot: 'Sa · Arcane Library'},
     {name: 'Fehnfieber', genre: 'Piano', slot: 'Sa · Arcane Library', img: 'Fehnfieber'},
     {name: 'C0LT', genre: 'Rap', slot: 'Sa · Arcane Library', img: 'COLT'},
     {name: 'Clip9', genre: 'Rap', slot: 'Sa · Arcane Library'},
