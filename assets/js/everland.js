@@ -270,7 +270,7 @@ const LIVE_ACTS = [
     {name: 'HUSH', genre: 'Hardrock, Metal', slot: 'Fr · Arcane Library', img: 'Hush'},
     {name: 'Silenzio', genre: 'Klavier', slot: 'Fr · Arcane Library'},
     {name: 'G!ANN!', genre: 'Rap, Pop', slot: 'Fr · Arcane Library'},
-    {name: 'Chloe', genre: 'Balladen', slot: 'Fr · Arcane Library', img: 'Chloe'},
+    {name: 'Chloe', genre: 'Balladen, Pop', slot: 'Fr · Arcane Library', img: 'Chloe'},
     {name: 'Ruby', genre: 'Pop', slot: 'Sa · Arcane Library'},
     {name: 'Fehnfieber', genre: 'Piano', slot: 'Sa · Arcane Library', img: 'Fehnfieber'},
     {name: 'C0LT', genre: 'Rap', slot: 'Sa · Arcane Library', img: 'COLT'},
