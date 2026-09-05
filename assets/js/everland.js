@@ -76,7 +76,7 @@ const PROGRAM_DATA = {
         ],
         [STAGES.ARCANE_LIBRARY]:       [
             {time: "19:00", type: "live", name: "Xavi", genre: "Latin"},
-            {time: "19:30", type: "live", name: "Chloe", genre: "Balladen"},
+            {time: "19:30", type: "live", name: "Chloe", genre: "Balladen, Pop"},
             {time: "20:00", type: "live", name: "G!ANN!", genre: "Rap, Pop"},
             {time: "20:30", type: "live", name: "Silenzio", genre: "Klavier, ruhig bis schneller"},
             {time: "21:30", type: "live", name: "HUSH", genre: "Hardrock, Metal"},
