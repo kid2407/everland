@@ -69,7 +69,7 @@ const PROGRAM_DATA = {
             {time: "20:00", type: "dj", name: "Sonic Pain", genre: "Hardstyle / Hardtechno"},
             {time: "21:00", type: "dj", name: "Vexx", genre: "Techno / Schranz"},
             {time: "22:30", type: "dj", name: "???", genre: "EDM"},
-            {time: "00:00", type: "dj", name: "NLYNX", genre: "Epische Festival-Klänge"},
+            {time: "00:00", type: "dj", name: "NLYNX", genre: "Big Room Techno"},
             {time: "01:00", type: "dj", name: "Triple T.", genre: "Techno"},
             {time: "02:00", type: "dj", name: "DJ N-Tec", genre: "Techno"},
             {time: "03:00", type: "dj", name: "DJ Xavi", genre: "Techno / Hardstyle"}
@@ -217,7 +217,7 @@ const PROGRAM_DATA = {
  * @type {{name: string, genre: string, slot: string, img: string?, special: boolean?}[]}
  */
 const SPECIAL_DJS = [
-    {name: 'NLYNX', genre: 'Epische Festival-Klänge', slot: 'Sa · Heart of the Kingdom', img: 'NLYNX', special: true},
+    {name: 'NLYNX', genre: 'Big Room Techno', slot: 'Sa · Heart of the Kingdom', img: 'NLYNX', special: true},
     {name: 'SAIJIN', genre: 'Schranz / Melodic', slot: 'So · Heart of the Kingdom', img: 'SAIJIN', special: true}
 ]
 
