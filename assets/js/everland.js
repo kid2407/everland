@@ -13,8 +13,8 @@ const DAYS = {
     SUNDAY:   "Sonntag"
 }
 
-const ARTIST_STAGE_NAMES   = [STAGES.HEART_OF_THE_KINGDOM, STAGES.ARCANE_LIBRARY, STAGES.MOON_GROVE, STAGES.BUTTERFLY_GARDEN]
-const ACTIVITY_STAGE_NAMES = [STAGES.ACTIVITY_STAGE, STAGES.EVERLAND_GROUND]
+const ARTIST_STAGES   = [STAGES.HEART_OF_THE_KINGDOM, STAGES.ARCANE_LIBRARY, STAGES.MOON_GROVE, STAGES.BUTTERFLY_GARDEN]
+const ACTIVITY_STAGES = [STAGES.ACTIVITY_STAGE, STAGES.EVERLAND_GROUND]
 
 const ICONS_FOR_TIMETABLE = {
     "dj":             "🎧",
@@ -69,14 +69,14 @@ const PROGRAM_DATA = {
             {time: "20:00", type: "dj", name: "Sonic Pain", genre: "Hardstyle / Hardtechno"},
             {time: "21:00", type: "dj", name: "Vexx", genre: "Techno / Schranz"},
             {time: "22:30", type: "dj", name: "???", genre: "EDM"},
-            {time: "00:00", type: "dj", name: "NLYNX", genre: "Epische Festival-Klänge"},
+            {time: "00:00", type: "dj", name: "NLYNX", genre: "Big Room Techno"},
             {time: "01:00", type: "dj", name: "Triple T.", genre: "Techno"},
             {time: "02:00", type: "dj", name: "DJ N-Tec", genre: "Techno"},
             {time: "03:00", type: "dj", name: "DJ Xavi", genre: "Techno / Hardstyle"}
         ],
         [STAGES.ARCANE_LIBRARY]:       [
             {time: "19:00", type: "live", name: "Xavi", genre: "Latin"},
-            {time: "19:30", type: "live", name: "Chloe", genre: "Balladen"},
+            {time: "19:30", type: "live", name: "Chloe", genre: "Balladen, Pop"},
             {time: "20:00", type: "live", name: "G!ANN!", genre: "Rap, Pop"},
             {time: "20:30", type: "live", name: "Silenzio", genre: "Klavier, ruhig bis schneller"},
             {time: "21:30", type: "live", name: "HUSH", genre: "Hardrock, Metal"},
@@ -217,7 +217,7 @@ const PROGRAM_DATA = {
  * @type {{name: string, genre: string, slot: string, img: string?, special: boolean?}[]}
  */
 const SPECIAL_DJS = [
-    {name: 'NLYNX', genre: 'Epische Festival-Klänge', slot: 'Sa · Heart of the Kingdom', img: 'NLYNX', special: true},
+    {name: 'NLYNX', genre: 'Big Room Techno', slot: 'Sa · Heart of the Kingdom', img: 'NLYNX', special: true},
     {name: 'SAIJIN', genre: 'Schranz / Melodic', slot: 'So · Heart of the Kingdom', img: 'SAIJIN', special: true}
 ]
 
@@ -228,17 +228,18 @@ const DJS = [
     {name: 'Sonic Pain', genre: 'Hardstyle / Hardtechno | Workout-Mix', slot: 'Fr · Heart of the Kingdom | Sa · Moon Grove', img: 'PAIN'},
     {name: 'MO', genre: 'HipHop', slot: 'Sa · Butterfly Garden', img: 'Mo'},
     {name: 'DJ Xavi', genre: 'Techno/Hardstyle | Latin', slot: 'Sa · Heart of the Kingdom | Sa · Butterfly Garden'},
-    {name: 'DJ Aura Nights', genre: 'House | Techno', slot: 'Fr · Moon Grove | Sa · Heart of the Kingdom', img: 'Aura_Nights'},
+    {name: 'DJ Aura Nights', genre: 'House | EDM', slot: 'Fr · Moon Grove | Sa · Heart of the Kingdom', img: 'Aura_Nights'},
     {name: 'Sync´d Souls', genre: 'House', slot: 'Fr · Moon Grove', img: 'Syncd_Souls'},
     {name: 'Skully n Bone', genre: 'Hardtechno', slot: 'Sa · Heart of the Kingdom', img: 'Skully_n_Bone'},
     {name: '???', genre: 'EDM', slot: 'Fr · Heart of the Kingdom | Sa · Moon Grove', img: 'Mouse'},
     {name: 'DJ Obscura', genre: '???', slot: 'Fr · Butterfly Garden | Sa · Moon Grove', img: 'Obscura'},
     {name: 'Djane Moonlight', genre: 'Techno | Latin', slot: 'Sa · Heart of the Kingdom | So · Heart of the Kingdom', img: 'Moonlight'},
-    {name: 'Ardent Luna', genre: 'EDM | Techno', slot: 'Fr · Moon Grove | Sa · Heart of the Kingdom'},
+    {name: 'Ardent Luna', genre: 'Techno', slot: 'Sa · Heart of the Kingdom'},
     {name: 'Emotional Damage', genre: 'Punkrock | 2000er', slot: 'Fr · Butterfly Garden', img: 'Emotional_Damage'},
     {name: 'Vexx', genre: 'Techno/Schranz | Trance/Psytrance', slot: 'Fr · Heart of the Kingdom | Sa · Moon Grove', img: 'VEXX'},
     {name: 'DJ N-Tec', genre: 'Techno | House', slot: 'Sa · Heart of the Kingdom | So · Butterfly Garden', img: 'NTEC'},
     {name: 'DJ Zoria', genre: '80er - 2000er | ??? | BigRoom', slot: 'Fr · Moon Grove | Sa · Butterfly Garden | Sa · Heart of the Kingdom', img: 'Zoria'},
+    {name: 'DJ Kaayaal', genre: 'Heutige Hits (Club Mix) | 80er - 2000er', slot: 'Fr · Moon Grove | Sa · Moon Grove', img: 'Kim_Kayaal'},
     {name: 'DJ JAR', genre: 'J-Pop | Mainstream-Pop', slot: 'Fr · Butterfly Garden | So · Moon Grove', img: 'JAR'},
     {name: 'Vanilla', genre: 'Hard-/Industrialtechno', slot: 'So · Heart of the Kingdom', img: 'Vanilla'},
     {name: 'SetteSensi', genre: 'Techno | House', slot: 'Fr · Heart of the Kingdom | Sa · Moon Grove', img: 'SetteSensi'},
@@ -249,7 +250,6 @@ const DJS = [
     {name: 'DJ Hari', genre: 'Metal', slot: 'Sa · Butterfly Garden'},
     {name: 'DJ Orochi', genre: 'Bounce/Mashups', slot: 'Sa · Heart of the Kingdom', img: 'Orochi'},
     {name: 'DJ dB', genre: 'House', slot: 'Sa · Moon Grove'},
-    {name: 'DJ Kaayaal', genre: 'Heutige Hits (Club Mix) | 80er - 2000er', slot: 'Fr · Moon Grove | Sa · Moon Grove', img: 'Kim_Kayaal'},
     {name: 'DJ Oceana', genre: 'House + 2010er Remixe | Epic | Techno/Elektro', slot: 'Fr · Moon Grove | Sa · Butterfly Garden | So · Heart of the Kingdom', img: 'Oceana'}
 ]
 
@@ -279,6 +279,7 @@ const LIVE_ACTS = [
     {name: 'C7CTUS', genre: 'Rap / Trap / R&B', slot: 'Sa · Arcane Library', img: 'C7ctus'},
     {name: '404UNK & Friends', genre: 'Rap', slot: 'Sa · Arcane Library | So · Arcane Library'},
     {name: 'Chay Latte', genre: 'Pop', slot: 'Sa · Arcane Library', img: 'Chay_Latte'},
+    {name: 'KIKI', genre: 'J/Pop, JazzPop', slot: 'Fr · Arcane Library'},
     {name: 'JUMO', genre: 'Geschichten mit der Gitarre', slot: 'Sa · Arcane Library'},
     {name: 'Tatsuya', genre: 'Metalcore / Nu Metal', slot: 'Sa · Arcane Library', img: 'Tatsuya'},
     {name: 'OTP Bando', genre: 'HipHop / RNB / Trap', slot: 'Sa · Arcane Library', img: 'OTP_Bando'},
@@ -337,24 +338,6 @@ const TEAM_MEMBERS = {
     ],
 }
 
-// ---------- nav scroll state ----------
-const nav = document.getElementById('siteNav')
-window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 40))
-
-// ---------- dropdown menus (Festival-Guide / Programm) ----------
-document.querySelectorAll('[data-toggle-drop]').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-        e.stopPropagation()
-        const item    = btn.closest('.nav-item')
-        const wasOpen = item.classList.contains('open')
-        document.querySelectorAll('.nav-item.open').forEach(i => i.classList.remove('open'))
-        if (!wasOpen) item.classList.add('open')
-    })
-})
-document.addEventListener('click', () => {
-    document.querySelectorAll('.nav-item.open').forEach(i => i.classList.remove('open'))
-})
-
 // ---------- page router (SPA, kein Server nötig) ----------
 function showPage(id) {
     document.querySelectorAll('.page').forEach(p => p.classList.remove('active'))
@@ -368,61 +351,6 @@ function showPage(id) {
     document.querySelectorAll('.nav-item.open').forEach(i => i.classList.remove('open'))
     document.querySelectorAll('.reveal').forEach(el => io.observe(el))
 }
-
-document.querySelectorAll('[data-target]').forEach(el => {
-    el.addEventListener('click', () => showPage(el.getAttribute('data-target')))
-})
-
-// ---------- stars ----------
-const starsEl = document.getElementById('stars')
-for (let i = 0; i < 60; i++) {
-    const s                = document.createElement('div')
-    s.className            = 'star'
-    s.style.left           = Math.random() * 100 + '%'
-    s.style.top            = Math.random() * 55 + '%'
-    s.style.animationDelay = (Math.random() * 3.5) + 's'
-    starsEl.appendChild(s)
-}
-// ---------- fireflies ----------
-const flyEl = document.getElementById('fireflies')
-for (let i = 0; i < 14; i++) {
-    const f                   = document.createElement('div')
-    f.className               = 'firefly'
-    f.style.left              = (10 + Math.random() * 80) + '%'
-    f.style.top               = (40 + Math.random() * 45) + '%'
-    f.style.animationDelay    = (Math.random() * 9) + 's'
-    f.style.animationDuration = (7 + Math.random() * 5) + 's'
-    flyEl.appendChild(f)
-}
-
-// ---------- scroll reveal ----------
-const io = new IntersectionObserver((entries) => {
-        entries.forEach(e => {
-            if (e.isIntersecting) {
-                e.target.classList.add('in')
-                io.unobserve(e.target)
-            }
-        })
-    },
-    {threshold: 0.15})
-document.querySelectorAll('.reveal').forEach(el => io.observe(el))
-
-// ---------- FAQ accordion ----------
-document.querySelectorAll('.faq-item').forEach(item => {
-    const btn = item.querySelector('.faq-q')
-    const ans = item.querySelector('.faq-a')
-    btn.addEventListener('click', () => {
-        const isOpen = item.classList.contains('open')
-        item.parentElement.querySelectorAll('.faq-item.open').forEach(o => {
-            o.classList.remove('open')
-            o.querySelector('.faq-a').style.maxHeight = null
-        })
-        if (!isOpen) {
-            item.classList.add('open')
-            ans.style.maxHeight = ans.scrollHeight + 'px'
-        }
-    })
-})
 
 // ---------- Timetable ----------
 /**
@@ -451,30 +379,6 @@ function renderDayForTimetable(day, timetableGrid, stages) {
         timetableGrid.appendChild(col)
     })
 }
-
-const stageGrid = document.getElementById('stageGrid')
-renderDayForTimetable(DAYS.FRIDAY, stageGrid, ARTIST_STAGE_NAMES)
-
-document.querySelectorAll('#artistTimetable .day-tab').forEach(tab => {
-    tab.addEventListener('click', () => {
-        document.querySelectorAll('#artistTimetable .day-tab').forEach(t => t.classList.remove('active'))
-        tab.classList.add('active')
-        renderDayForTimetable(tab.dataset.day, stageGrid, ARTIST_STAGE_NAMES)
-    })
-})
-
-const activityGrid = document.getElementById('activityGrid')
-renderDayForTimetable(DAYS.FRIDAY, activityGrid, ACTIVITY_STAGE_NAMES)
-
-document.querySelectorAll('#activityTimetable .day-tab').forEach(tab => {
-    tab.addEventListener('click', () => {
-        document.querySelectorAll('#activityTimetable .day-tab').forEach(t => t.classList.remove('active'))
-        tab.classList.add('active')
-        renderDayForTimetable(tab.dataset.day, activityGrid, ACTIVITY_STAGE_NAMES)
-    })
-})
-
-// ---------- DJs / Live-Acts / Team Platzhalter-Grids ----------
 
 /**
  * @param {string} id
@@ -507,28 +411,133 @@ function fillGrid(id, items, type) {
     }).join('')
 }
 
-fillGrid('djSpecialGrid', SPECIAL_DJS, 'dj')
-fillGrid('djGrid', DJS, 'dj')
-fillGrid('liveSpecialGrid', SPECIAL_LIVE_ACTS, 'live')
-fillGrid('liveGrid', LIVE_ACTS, 'live')
-
-const teamGridEl = document.getElementById('teamGrid')
-if (teamGridEl) {
-    let teamHTML = '', memberCard = ''
-    for (let [role, members] of Object.entries(TEAM_MEMBERS)) {
-        teamHTML += `<p class="eyebrow">${role}</p>`
-        teamHTML += `<div class="team-grid team-grid-${members.length}">`
-        teamHTML += members.map(member => {
-            return `
+function initTeamGrid() {
+    const teamGridEl = document.getElementById('teamGrid')
+    if (teamGridEl) {
+        let teamHTML = '', memberCard = ''
+        for (let [role, members] of Object.entries(TEAM_MEMBERS)) {
+            teamHTML += `<p class="eyebrow">${role}</p>`
+            teamHTML += `<div class="team-grid team-grid-${members.length}">`
+            teamHTML += members.map(member => {
+                return `
             <div class="team-card reveal in">
                 <div class="team-photo">
                     <img src="${member.image ? `/everland/assets/img/team/${member.name}.gif` : '/everland/assets/img/artistPlaceholder.gif'}">
                 </div>
                 <h4>${member.name}</h4>
             </div>`
-        }).join('')
-        teamHTML += `</div>`
-    }
+            }).join('')
+            teamHTML += `</div>`
+        }
 
-    teamGridEl.innerHTML = teamHTML
+        teamGridEl.innerHTML = teamHTML
+    }
 }
+
+/**
+ * @param {string} day
+ * @param {string} targetGrid
+ * @param {string} targetTimetable
+ * @param {string[]}valid_stages
+ */
+function initTimetable(day, targetGrid, targetTimetable, valid_stages) {
+    const grid = document.getElementById(targetGrid)
+    renderDayForTimetable(day, grid, valid_stages)
+
+    document.querySelectorAll('#' + targetTimetable + ' .day-tab').forEach(tab => {
+        tab.addEventListener('click', () => {
+            document.querySelectorAll('#' + targetTimetable + ' .day-tab').forEach(t => t.classList.remove('active'))
+            tab.classList.add('active')
+            renderDayForTimetable(tab.dataset.day, grid, valid_stages)
+        })
+    })
+}
+
+function initEventListeners() {
+    // ---------- nav scroll state ----------
+    const nav = document.getElementById('siteNav')
+    window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 40))
+
+    // ---------- dropdown menus (Festival-Guide / Programm) ----------
+    document.querySelectorAll('[data-toggle-drop]').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation()
+            const item    = btn.closest('.nav-item')
+            const wasOpen = item.classList.contains('open')
+            document.querySelectorAll('.nav-item.open').forEach(i => i.classList.remove('open'))
+            if (!wasOpen) item.classList.add('open')
+        })
+    })
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.nav-item.open').forEach(i => i.classList.remove('open'))
+    })
+
+    document.querySelectorAll('[data-target]').forEach(el => {
+        el.addEventListener('click', () => showPage(el.getAttribute('data-target')))
+    })
+
+    // ---------- scroll reveal ----------
+    const io = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.classList.add('in')
+                    io.unobserve(e.target)
+                }
+            })
+        },
+        {threshold: 0.15})
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el))
+
+    // ---------- FAQ accordion ----------
+    document.querySelectorAll('.faq-item').forEach(item => {
+        const btn = item.querySelector('.faq-q')
+        const ans = item.querySelector('.faq-a')
+        btn.addEventListener('click', () => {
+            const isOpen = item.classList.contains('open')
+            item.parentElement.querySelectorAll('.faq-item.open').forEach(o => {
+                o.classList.remove('open')
+                o.querySelector('.faq-a').style.maxHeight = null
+            })
+            if (!isOpen) {
+                item.classList.add('open')
+                ans.style.maxHeight = ans.scrollHeight + 'px'
+            }
+        })
+    })
+}
+
+function initSparklingStars() {
+    // ---------- stars ----------
+    const starsEl = document.getElementById('stars')
+    for (let i = 0; i < 60; i++) {
+        const s                = document.createElement('div')
+        s.className            = 'star'
+        s.style.left           = Math.random() * 100 + '%'
+        s.style.top            = Math.random() * 55 + '%'
+        s.style.animationDelay = (Math.random() * 3.5) + 's'
+        starsEl.appendChild(s)
+    }
+// ---------- fireflies ----------
+    const flyEl = document.getElementById('fireflies')
+    for (let i = 0; i < 14; i++) {
+        const f                   = document.createElement('div')
+        f.className               = 'firefly'
+        f.style.left              = (10 + Math.random() * 80) + '%'
+        f.style.top               = (40 + Math.random() * 45) + '%'
+        f.style.animationDelay    = (Math.random() * 9) + 's'
+        f.style.animationDuration = (7 + Math.random() * 5) + 's'
+        flyEl.appendChild(f)
+    }
+}
+
+initSparklingStars()
+initEventListeners()
+initTeamGrid()
+initTimetable(DAYS.FRIDAY, 'stageGrid', 'artistTimetable', ARTIST_STAGES)
+initTimetable(DAYS.FRIDAY, 'activityGrid', 'activityTimetable', ACTIVITY_STAGES)
+
+fillGrid('djSpecialGrid', SPECIAL_DJS, 'dj')
+fillGrid('djGrid', DJS, 'dj')
+fillGrid('liveSpecialGrid', SPECIAL_LIVE_ACTS, 'live')
+fillGrid('liveGrid', LIVE_ACTS, 'live')
+
