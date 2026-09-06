@@ -13,6 +13,15 @@ const DAYS = {
     SUNDAY:   "Sonntag"
 }
 
+const CALENDAR_DAYS = {
+    18: DAYS.FRIDAY,
+    19: DAYS.SATURDAY,
+    20: DAYS.SUNDAY
+}
+
+FESTIVAL_START_DAY = 18
+FESTIVAL_END_DAY   = 20
+
 const ARTIST_STAGES   = [STAGES.HEART_OF_THE_KINGDOM, STAGES.ARCANE_LIBRARY, STAGES.MOON_GROVE, STAGES.BUTTERFLY_GARDEN]
 const ACTIVITY_STAGES = [STAGES.ACTIVITY_STAGE, STAGES.EVERLAND_GROUND]
 
@@ -357,8 +366,9 @@ function showPage(id) {
  * @param {string} day
  * @param {HTMLElement} timetableGrid
  * @param {string[]} stages
+ * @param {string} targetTimetable
  */
-function renderDayForTimetable(day, timetableGrid, stages) {
+function renderDayForTimetable(day, timetableGrid, stages, targetTimetable) {
     let col, items
     timetableGrid.innerHTML = ''
     stages.forEach(stage => {
@@ -377,6 +387,14 @@ function renderDayForTimetable(day, timetableGrid, stages) {
         }
         col.innerHTML = `<h3>${stage}</h3>${items}`
         timetableGrid.appendChild(col)
+    })
+
+    document.querySelectorAll('#' + targetTimetable + ' .day-tab').forEach(tab => {
+        if (tab.getAttribute("data-day") === day) {
+            tab.classList.add("active")
+        } else {
+            tab.classList.remove("active")
+        }
     })
 }
 
@@ -442,13 +460,13 @@ function initTeamGrid() {
  */
 function initTimetable(day, targetGrid, targetTimetable, valid_stages) {
     const grid = document.getElementById(targetGrid)
-    renderDayForTimetable(day, grid, valid_stages)
+    renderDayForTimetable(day, grid, valid_stages, targetTimetable)
 
     document.querySelectorAll('#' + targetTimetable + ' .day-tab').forEach(tab => {
         tab.addEventListener('click', () => {
-            document.querySelectorAll('#' + targetTimetable + ' .day-tab').forEach(t => t.classList.remove('active'))
-            tab.classList.add('active')
-            renderDayForTimetable(tab.dataset.day, grid, valid_stages)
+            // document.querySelectorAll('#' + targetTimetable + ' .day-tab').forEach(t => t.classList.remove('active'))
+            // tab.classList.add('active')
+            renderDayForTimetable(tab.dataset.day, grid, valid_stages, targetTimetable)
         })
     })
 }
@@ -475,18 +493,6 @@ function initEventListeners() {
     document.querySelectorAll('[data-target]').forEach(el => {
         el.addEventListener('click', () => showPage(el.getAttribute('data-target')))
     })
-
-    // ---------- scroll reveal ----------
-    const io = new IntersectionObserver((entries) => {
-            entries.forEach(e => {
-                if (e.isIntersecting) {
-                    e.target.classList.add('in')
-                    io.unobserve(e.target)
-                }
-            })
-        },
-        {threshold: 0.15})
-    document.querySelectorAll('.reveal').forEach(el => io.observe(el))
 
     // ---------- FAQ accordion ----------
     document.querySelectorAll('.faq-item').forEach(item => {
@@ -530,11 +536,43 @@ function initSparklingStars() {
     }
 }
 
+/**
+ * @returns {string}
+ */
+function getCurrentlyActiveDay() {
+    let today      = new Date()
+    let dayOfMonth = today.getDate()
+    if (CALENDAR_DAYS.hasOwnProperty(dayOfMonth)) {
+        return CALENDAR_DAYS[dayOfMonth]
+    } else if (dayOfMonth < FESTIVAL_START_DAY) {
+        return DAYS.FRIDAY
+    } else if (dayOfMonth > FESTIVAL_END_DAY) {
+        return DAYS.SUNDAY
+    } else {
+        return DAYS.FRIDAY
+    }
+}
+
+// ---------- scroll reveal ----------
+const io = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+            if (e.isIntersecting) {
+                e.target.classList.add('in')
+                io.unobserve(e.target)
+            }
+        })
+    },
+    {threshold: 0.15})
+document.querySelectorAll('.reveal').forEach(el => io.observe(el))
+
 initSparklingStars()
 initEventListeners()
 initTeamGrid()
-initTimetable(DAYS.FRIDAY, 'stageGrid', 'artistTimetable', ARTIST_STAGES)
-initTimetable(DAYS.FRIDAY, 'activityGrid', 'activityTimetable', ACTIVITY_STAGES)
+
+const today = getCurrentlyActiveDay()
+initTimetable(today, 'stageGrid', 'artistTimetable', ARTIST_STAGES)
+initTimetable(today, 'activityGrid', 'activityTimetable', ACTIVITY_STAGES)
+
 
 fillGrid('djSpecialGrid', SPECIAL_DJS, 'dj')
 fillGrid('djGrid', DJS, 'dj')
