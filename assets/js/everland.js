@@ -68,7 +68,7 @@ const PROGRAM_DATA = {
             {time: "18:30", type: "dj", name: "SetteSensi", genre: "Techno"},
             {time: "20:00", type: "dj", name: "Sonic Pain", genre: "Hardstyle / Hardtechno"},
             {time: "21:00", type: "dj", name: "Vexx", genre: "Techno / Schranz"},
-            {time: "22:30", type: "dj", name: "???", genre: "EDM"},
+            {time: "22:30", type: "dj", name: "Special Guest", genre: "EDM"},
             {time: "00:00", type: "dj", name: "NLYNX", genre: "Big Room Techno"},
             {time: "01:00", type: "dj", name: "Triple T.", genre: "Techno"},
             {time: "02:00", type: "dj", name: "DJ N-Tec", genre: "Techno"},
@@ -231,7 +231,7 @@ const DJS = [
     {name: 'DJ Aura Nights', genre: 'House | EDM', slot: 'Fr · Moon Grove | Sa · Heart of the Kingdom', img: 'Aura_Nights'},
     {name: 'Sync´d Souls', genre: 'House', slot: 'Fr · Moon Grove', img: 'Syncd_Souls'},
     {name: 'Skully n Bone', genre: 'Hardtechno', slot: 'Sa · Heart of the Kingdom', img: 'Skully_n_Bone'},
-    {name: '???', genre: 'EDM', slot: 'Fr · Heart of the Kingdom | Sa · Moon Grove', img: 'Mouse'},
+    {name: 'Special Guest', genre: 'EDM', slot: 'Fr · Heart of the Kingdom | Sa · Moon Grove', img: 'Mouse'},
     {name: 'DJ Obscura', genre: '???', slot: 'Fr · Butterfly Garden | Sa · Moon Grove', img: 'Obscura'},
     {name: 'Djane Moonlight', genre: 'Techno | Latin', slot: 'Sa · Heart of the Kingdom | So · Heart of the Kingdom', img: 'Moonlight'},
     {name: 'Ardent Luna', genre: 'Techno', slot: 'Sa · Heart of the Kingdom'},
@@ -292,7 +292,7 @@ const LIVE_ACTS = [
     {name: 'Jane Doe', genre: 'Darkpop, Acoustic', slot: 'Sa · Arcane Library', img: 'Jane_Doe'},
     {name: 'Blanche', genre: 'Pop, Folk', slot: 'Sa · Arcane Library', img: 'Blanche'},
     {name: 'Dave P', genre: 'Rap, Pop', slot: 'Sa · Arcane Library'},
-    {name: 'aMillie', genre: 'Rock, Pop, Indie, Soul, R&B', slot: 'Sa · Arcane Library'},
+    {name: 'aMillie', genre: 'Rock, Pop, Indie, Soul, R&B', slot: 'Sa · Arcane Library', img: 'aMillie'},
     {name: 'Xavi', genre: 'Latin', slot: 'Fr · Arcane Library'}
 ]
 
