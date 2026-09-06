@@ -236,7 +236,7 @@ const SPECIAL_DJS = [
 const DJS = [
     {name: 'Sonic Pain', genre: 'Hardstyle / Hardtechno | Workout-Mix', slot: 'Fr · Heart of the Kingdom | Sa · Moon Grove', img: 'PAIN'},
     {name: 'MO', genre: 'HipHop', slot: 'Sa · Butterfly Garden', img: 'Mo'},
-    {name: 'DJ Xavi', genre: 'Techno/Hardstyle | Latin', slot: 'Sa · Heart of the Kingdom | Sa · Butterfly Garden'},
+    {name: 'DJ Xavi', genre: 'Techno/Hardstyle | Latin', slot: 'Sa · Heart of the Kingdom | Sa · Butterfly Garden', img: 'Xavi'},
     {name: 'DJ Aura Nights', genre: 'House | EDM', slot: 'Fr · Moon Grove | Sa · Heart of the Kingdom', img: 'Aura_Nights'},
     {name: 'Sync´d Souls', genre: 'House', slot: 'Fr · Moon Grove', img: 'Syncd_Souls'},
     {name: 'Skully n Bone', genre: 'Hardtechno', slot: 'Sa · Heart of the Kingdom', img: 'Skully_n_Bone'},
@@ -256,7 +256,7 @@ const DJS = [
     {name: 'Triple T.', genre: 'Techno | Dance-Pop', slot: 'Sa · Heart of the Kingdom | Sa · Moon Grove', img: 'Triple_T'},
     {name: 'DJ Black Tiger', genre: '80s-90s | Mittelalterrock', slot: 'Sa · Butterfly Garden', img: 'BlackTiger'},
     {name: 'Bohne Frei', genre: 'Rock/Metal | Chill/Club House', slot: 'Fr · Butterfly Garden | Sa · Butterfly Garden', img: 'Boenefrei'},
-    {name: 'DJ Hari', genre: 'Metal', slot: 'Sa · Butterfly Garden'},
+    {name: 'DJ Hari', genre: 'Metal', slot: 'Sa · Butterfly Garden', img: 'Hari'},
     {name: 'DJ Orochi', genre: 'Bounce/Mashups', slot: 'Sa · Heart of the Kingdom', img: 'Orochi'},
     {name: 'DJ dB', genre: 'House', slot: 'Sa · Moon Grove'},
     {name: 'DJ Oceana', genre: 'House + 2010er Remixe | Epic | Techno/Elektro', slot: 'Fr · Moon Grove | Sa · Butterfly Garden | So · Heart of the Kingdom', img: 'Oceana'}
@@ -289,7 +289,7 @@ const LIVE_ACTS = [
     {name: '404UNK & Friends', genre: 'Rap', slot: 'Sa · Arcane Library | So · Arcane Library'},
     {name: 'Chay Latte', genre: 'Pop', slot: 'Sa · Arcane Library', img: 'Chay_Latte'},
     {name: 'KIKI', genre: 'J/Pop, JazzPop', slot: 'Fr · Arcane Library'},
-    {name: 'JUMO', genre: 'Geschichten mit der Gitarre', slot: 'Sa · Arcane Library'},
+    {name: 'JUMO', genre: 'Geschichten mit der Gitarre', slot: 'Sa · Arcane Library', img: 'Jumo'},
     {name: 'Tatsuya', genre: 'Metalcore / Nu Metal', slot: 'Sa · Arcane Library', img: 'Tatsuya'},
     {name: 'OTP Bando', genre: 'HipHop / RNB / Trap', slot: 'Sa · Arcane Library', img: 'OTP_Bando'},
     {name: 'OTP Damage', genre: 'HipHop / RNB / Trap', slot: 'Sa · Arcane Library', img: 'OTP_Damage'},
@@ -302,7 +302,7 @@ const LIVE_ACTS = [
     {name: 'Blanche', genre: 'Pop, Folk', slot: 'Sa · Arcane Library', img: 'Blanche'},
     {name: 'Dave P', genre: 'Rap, Pop', slot: 'Sa · Arcane Library'},
     {name: 'aMillie', genre: 'Rock, Pop, Indie, Soul, R&B', slot: 'Sa · Arcane Library', img: 'aMillie'},
-    {name: 'Xavi', genre: 'Latin', slot: 'Fr · Arcane Library'}
+    {name: 'Xavi', genre: 'Latin', slot: 'Fr · Arcane Library', img: 'Xavi'}
 ]
 
 /**
