@@ -39,7 +39,8 @@ const ICONS_FOR_TIMETABLE = {
     "black-stories":  "📓",
     "sports":         "⛹",
     "witch":          "🪄",
-    "water":          "🤽"
+    "water":          "🤽",
+    "figurine":       "🪵"
 }
 
 /**

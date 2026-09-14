@@ -1021,6 +1021,10 @@ section {
     min-width: 44px;
 }
 
+#activityTimetable .stage-col .tl-time {
+    min-width: 100px;
+}
+
 .stage-col .tl-icon {
     font-size: 1.5rem;
 }
