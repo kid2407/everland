@@ -73,7 +73,7 @@ const ICONS_FOR_TIMETABLE = {
 const PROGRAM_DATA = {
     [DAYS.FRIDAY]:   {
         [STAGES.HEART_OF_THE_KINGDOM]: [
-            {time: "16:30", type: "dj", name: "DJ Street", genre: "Handsup"},
+            {time: "15:30", type: "dj", name: "DJ Street", genre: "Handsup"},
             {time: "18:30", type: "dj", name: "SetteSensi", genre: "Techno"},
             {time: "20:00", type: "dj", name: "Sonic Pain", genre: "Hardstyle / Hardtechno"},
             {time: "21:00", type: "dj", name: "Vexx", genre: "Techno / Schranz"},
@@ -100,16 +100,15 @@ const PROGRAM_DATA = {
         [STAGES.MOON_GROVE]:           [
             {time: "17:00", type: "dj", name: "Kaayaal", genre: "Heutige Hits (Club Mix)"},
             {time: "18:00", type: "dj", name: "Zoria", genre: "80er - 2000er"},
-            {time: "19:30", type: "dj", name: "Oceana", genre: "House & 2010er Remixe"},
+            {time: "19:30", type: "dj", name: "Orochi", genre: "???"},
             {time: "21:00", type: "dj", name: "Kaayaal", genre: "Heutige Hits (Club Mix)"},
             {time: "22:00", type: "dj", name: "Aura Nights", genre: "House"},
             {time: "23:00", type: "dj", name: "Sync´d Souls", genre: "House"},
             {time: "01:00", type: "dj", name: "Db", genre: "House"}
         ],
         [STAGES.BUTTERFLY_GARDEN]:     [
-            {time: "17:30", type: "dj", name: "DJ Jar", genre: "J-Pop"},
-            {time: "19:00", type: "dj", name: "DJ Obscura", genre: "???"},
-            {time: "20:30", type: "dj", name: "Bohne Frei", genre: "Rock / Metal"},
+            {time: "19:00", type: "dj", name: "Skully n Bone", genre: "Hardtechno"},
+            {time: "20:30", type: "dj", name: "DJ Obscura", genre: "???"},
             {time: "22:00", type: "dj", name: "Emotional Damage", genre: "Punkrock"},
             {time: "00:30", type: "dj", name: "Black Tiger", genre: "80s-90s"}
         ],
@@ -127,15 +126,14 @@ const PROGRAM_DATA = {
             {time: "18:00", type: "dj", name: "Ardent Luna", genre: "Techno"},
             {time: "19:00", type: "dj", name: "DJ Aura Nights", genre: "Techno"},
             {time: "21:00", type: "dj", name: "DJ Zoria", genre: "BigRoom"},
-            {time: "23:00", type: "dj", name: "Skully n Bone", genre: "Hardtechno"},
-            {time: "00:00", type: "dj", name: "Saijin", genre: "Schranz / Melodic"},
-            {time: "01:30", type: "dj", name: "Vanilla", genre: "Hardtechno / Industrialtechno"},
-            {time: "03:00", type: "dj", name: "Oceana", genre: "Techno / Elektro"}
+            {time: "22:00", type: "dj", name: "Skully n Bone", genre: "Hardtechno"},
+            {time: "00:00", type: "dj", name: "Vanilla", genre: "Hardtechno / Industrialtechno"},
+            {time: "02:00", type: "dj", name: "Oceana", genre: "Techno / Elektro"}
         ],
         [STAGES.ARCANE_LIBRARY]:       [
             {time: "12:00", type: "live", name: "Fehnfieber", genre: "Piano"},
             {time: "14:00", type: "live", name: "Der weiße Drache", genre: "Lustige Musik"},
-            {time: "14:30", type: "live", name: "Jarvis", genre: "Rap"},
+            {time: "14:30", type: "live", name: "Jane Doe", genre: "Darkpop, Acoustic"},
             {time: "15:00", type: "live", name: "Millie", genre: "Soul"},
             {time: "16:00", type: "live", name: "404UNK & Friends", genre: "Rap"},
             {time: "16:30", type: "live", name: "Chay Latte", genre: "Gesang / Pop"},
@@ -154,22 +152,20 @@ const PROGRAM_DATA = {
         ],
         [STAGES.MOON_GROVE]:           [
             {time: "12:00", type: "dj", name: "Open DJ-Pult", genre: "Unendliche Möglichkeiten"},
-            {time: "15:00", type: "dj", name: "DJ Kayaal", genre: "80er - 2000er"},
-            {time: "16:00", type: "dj", name: "Sonic Pain", genre: "Workout-Mix"},
-            {time: "17:30", type: "dj", name: "Vexx", genre: "Trance / Psytrance"},
-            {time: "18:30", type: "dj", name: "Obscura", genre: "???"},
-            {time: "19:30", type: "dj", name: "SetteSensi", genre: "House"},
-            {time: "20:30", type: "dj", name: "???", genre: "EDM"},
+            {time: "15:00", type: "dj", name: "DJ Kaayaal", genre: "80er - 2000er"},
+            {time: "16:00", type: "dj", name: "Vexx", genre: "Trance / Psytrance"},
+            {time: "17:00", type: "dj", name: "SetteSensi", genre: "House"},
+            {time: "18:00", type: "dj", name: "Obscura", genre: "???"},
+            {time: "19:00", type: "dj", name: "Sonic Pain", genre: "???"},
+            {time: "20:30", type: "dj", name: "Special Guest", genre: "EDM"},
             {time: "21:30", type: "dj", name: "Triple T", genre: "Dance-Pop"},
-            {time: "23:00", type: "dj", name: "DJ Street", genre: "80er-2000er"},
+            {time: "23:00", type: "dj", name: "DJ Kaayaal", genre: "80er-2000er"},
             {time: "00:30", type: "dj", name: "DJ JAR", genre: "Mainstream-Pop"}
         ],
         [STAGES.BUTTERFLY_GARDEN]:     [
             {time: "12:00", type: "dj", name: "Open DJ-Pult", genre: "Unendliche Möglichkeiten"},
             {time: "14:00", type: "dj", name: "DJ Street", genre: "???"},
-            {time: "16:00", type: "dj", name: "Bohne Frei", genre: "Chill / Club House"},
-            {time: "17:30", type: "dj", name: "Zoria", genre: "???"},
-            {time: "18:30", type: "dj", name: "Oceana", genre: "Epic"},
+            {time: "16:00", type: "dj", name: "Zoria", genre: "???"},
             {time: "19:30", type: "dj", name: "DJ Xavi", genre: "Latin"},
             {time: "20:30", type: "dj", name: "Mo", genre: "HipHop"},
             {time: "22:00", type: "dj", name: "Hari", genre: "Metal"},
@@ -183,9 +179,10 @@ const PROGRAM_DATA = {
             {time: "19:00 - 20:00", type: "dancing", name: "Poledance", genre: "Normales Tanzen ist euch zu langweilig? Dann kommt vorbei"}
         ],
         [STAGES.EVERLAND_GROUND]:      [
-            {time: "12:00 - 13:00", type: "sports", name: "Butterfly Garden | Enchanted Workout", genre: "Fit sein ist wichtig!"},
-            {time: "13:00 - 14:00", type: "water", name: "Aquafitness", genre: "See | Fitness und kühles Nass in einem? Was will man mehr?"},
+            {time: "12:00 - 13:00", type: "sports", name: "Butterfly Garden | Enchanted Workout - Mit SONIC PAIN", genre: "Fit sein ist wichtig!"},
+            {time: "13:00 - 14:00", type: "water", name: "Aquafitness", genre: "See | Fitness und kühles Nass in Einem - Was will man mehr?"},
             {time: "14:00 - 16:00", type: "witch", name: "Schnitzeljagd", genre: "Mit der Herbal Witchery. Was man dabei wohl so findet?"},
+            {time: "14:00 - 16:00", type: "figurine", name: "Holzfiguren Schnitzen", genre: "Mit und von Vanguard. Endlich mal (professioneller) Figurmacher sein!"},
             {time: "17:00 - 18:00", type: "boxing", name: "Boxen", genre: "Boxring | Sich (geordnet) abreagieren und dabei noch Sport machen? Ab zum Boxen!"},
             {time: "17:00 - 19:00", type: "drawing", name: "Pastelpeach", genre: "Zeichenplatz | Lass dich oder deine liebsten Zeichnen"},
             {time: "18:00 - 20:00", type: "cards", name: "Midnight Witch", genre: "Die Karten erzählen viele Dinge&hellip;"},
@@ -200,7 +197,8 @@ const PROGRAM_DATA = {
         [STAGES.HEART_OF_THE_KINGDOM]: [
             {time: "11:00", type: "dj", name: "Open DJ-Pult", genre: "Unendliche Möglichkeiten"},
             {time: "12:00", type: "dj", name: "DJ Moonlight", genre: "Latin"},
-            {time: "13:30", type: "dj", name: "Großes Finale", genre: "Everland:<br>A World Beyond"}
+            {time: "13:30", type: "dj", name: "DJ Oceana", genre: "???"},
+            // {time: "13:30", type: "dj", name: "Großes Finale", genre: "Everland:<br>A World Beyond"}
         ],
         [STAGES.ARCANE_LIBRARY]:       [
             {time: "ab 01:30", type: "live", name: "Stille", genre: "Auf dieser Bühne ist es zwar ruhig, aber das Festival ist noch nicht vorbei&hellip;"}
