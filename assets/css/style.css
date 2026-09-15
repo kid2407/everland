@@ -1050,6 +1050,15 @@ section {
     margin-bottom:         50px;
 }
 
+#djSpecialGrid.artist-grid {
+    grid-template-columns: 1fr;
+}
+
+#djSpecialGrid.artist-grid .artist-card {
+    max-width: 550px;
+    margin:    0 auto;
+}
+
 .artist-card {
     /*background:     rgba(255, 255, 255, .05);*/
     /*border:         1px solid rgba(227, 199, 133, .25);*/

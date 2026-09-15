@@ -40,7 +40,9 @@ const ICONS_FOR_TIMETABLE = {
     "sports":         "⛹",
     "witch":          "🪄",
     "water":          "🤽",
-    "figurine":       "🪵"
+    "figurine":       "🪵",
+    "mask":           "🎭",
+    "boat":           "🚤"
 }
 
 /**
@@ -101,7 +103,7 @@ const PROGRAM_DATA = {
         [STAGES.MOON_GROVE]:           [
             {time: "17:00", type: "dj", name: "Kaayaal", genre: "Heutige Hits (Club Mix)"},
             {time: "18:00", type: "dj", name: "Zoria", genre: "80er - 2000er"},
-            {time: "19:30", type: "dj", name: "Orochi", genre: "???"},
+            {time: "19:30", type: "dj", name: "Orochi", genre: "Bounce / Mashups"},
             {time: "21:00", type: "dj", name: "Kaayaal", genre: "Heutige Hits (Club Mix)"},
             {time: "22:00", type: "dj", name: "Aura Nights", genre: "House"},
             {time: "23:00", type: "dj", name: "Sync´d Souls", genre: "House"},
@@ -142,6 +144,7 @@ const PROGRAM_DATA = {
             {time: "18:00", type: "live", name: "Dave P", genre: "Rap, Pop"},
             {time: "18:30", type: "live", name: "Keira Maguire", genre: "Pop, Folk"},
             {time: "19:00", type: "live", name: "TheRealRJ", genre: "Rap / HipHop / Pop"},
+            {time: "20:00", type: "mask", name: "Aufführung des<br>Vinewood Variete", genre: "Variete Stage<br>\"Headliner gesucht\""},
             {time: "20:00", type: "live", name: "JUMO", genre: "Geschichten mit der Gitarre"},
             {time: "20:30", type: "live", name: "C7CTUS", genre: "DJ / Rap / Trap / R&B"},
             {time: "21:00", type: "live", name: "C0LT", genre: "Rap"},
@@ -157,7 +160,7 @@ const PROGRAM_DATA = {
             {time: "16:00", type: "dj", name: "Vexx", genre: "Trance / Psytrance"},
             {time: "17:00", type: "dj", name: "SetteSensi", genre: "House"},
             {time: "18:00", type: "dj", name: "Obscura", genre: "???"},
-            {time: "19:00", type: "dj", name: "Sonic Pain", genre: "???"},
+            {time: "19:00", type: "dj", name: "Sonic Pain", genre: "Workout Mix"},
             {time: "20:30", type: "dj", name: "Special Guest", genre: "EDM"},
             {time: "21:30", type: "dj", name: "Triple T", genre: "Dance-Pop"},
             {time: "23:00", type: "dj", name: "DJ Kaayaal", genre: "80er-2000er"},
@@ -165,7 +168,7 @@ const PROGRAM_DATA = {
         ],
         [STAGES.BUTTERFLY_GARDEN]:     [
             {time: "12:00", type: "dj", name: "Open DJ-Pult", genre: "Unendliche Möglichkeiten"},
-            {time: "14:00", type: "dj", name: "DJ Street", genre: "???"},
+            {time: "14:00", type: "dj", name: "DJ Street", genre: "Mittelalter- & Nordic Viking Rock"},
             {time: "16:00", type: "dj", name: "Zoria", genre: "???"},
             {time: "19:30", type: "dj", name: "DJ Xavi", genre: "Latin"},
             {time: "20:30", type: "dj", name: "Mo", genre: "HipHop"},
@@ -183,8 +186,9 @@ const PROGRAM_DATA = {
             {time: "12:00 - 13:00", type: "sports", name: "Butterfly Garden | Enchanted Workout - Mit SONIC PAIN", genre: "Fit sein ist wichtig!"},
             {time: "13:00 - 14:00", type: "water", name: "Aquafitness", genre: "See | Fitness und kühles Nass in Einem - Was will man mehr?"},
             {time: "14:00 - 16:00", type: "witch", name: "Schnitzeljagd", genre: "Mit der Herbal Witchery. Was man dabei wohl so findet?"},
-            {time: "14:00 - 16:00", type: "figurine", name: "Holzfiguren Schnitzen", genre: "Mit und von Vanguard. Endlich mal (professioneller) Figurmacher sein!"},
+            {time: "14:00 - 16:00", type: "figurine", name: "Holzfiguren Schnitzen", genre: "Mit und von Vanguard.<br>Endlich mal (professioneller) Figurmacher sein!"},
             {time: "17:00 - 18:00", type: "boxing", name: "Boxen", genre: "Boxring | Sich (geordnet) abreagieren und dabei noch Sport machen? Ab zum Boxen!"},
+            {time: "16:00 - 18:00", type: "boat", name: "Kleine Rundfahrt", genre: "Bootsanleger | Eine kleine Rundfahrt um die Insel"},
             {time: "17:00 - 19:00", type: "drawing", name: "Pastelpeach", genre: "Zeichenplatz | Lass dich oder deine liebsten Zeichnen"},
             {time: "18:00 - 20:00", type: "cards", name: "Midnight Witch", genre: "Die Karten erzählen viele Dinge&hellip;"},
             {time: "19:00 - 20:00", type: "witch", name: "Schnitzeljagd", genre: "Mit der Herbal Witchery. Was man dabei wohl so findet?"},
@@ -198,8 +202,7 @@ const PROGRAM_DATA = {
         [STAGES.HEART_OF_THE_KINGDOM]: [
             {time: "11:00", type: "dj", name: "Open DJ-Pult", genre: "Unendliche Möglichkeiten"},
             {time: "12:00", type: "dj", name: "DJ Moonlight", genre: "Latin"},
-            {time: "13:30", type: "dj", name: "DJ Oceana", genre: "???"},
-            // {time: "13:30", type: "dj", name: "Großes Finale", genre: "Everland:<br>A World Beyond"}
+            {time: "13:30", type: "dj", name: "DJ Oceana", genre: "Das große Finale"}
         ],
         [STAGES.ARCANE_LIBRARY]:       [
             {time: "ab 01:30", type: "live", name: "Stille", genre: "Auf dieser Bühne ist es zwar ruhig, aber das Festival ist noch nicht vorbei&hellip;"}
@@ -225,8 +228,7 @@ const PROGRAM_DATA = {
  * @type {{name: string, genre: string, slot: string, img: string?, special: boolean?}[]}
  */
 const SPECIAL_DJS = [
-    {name: 'NLYNX', genre: 'Big Room Techno', slot: 'Sa · Heart of the Kingdom', img: 'NLYNX', special: true},
-    {name: 'SAIJIN', genre: 'Schranz / Melodic', slot: 'So · Heart of the Kingdom', img: 'SAIJIN', special: true}
+    {name: 'NLYNX', genre: 'Big Room Techno', slot: 'Sa · Heart of the Kingdom', img: 'NLYNX', special: true}
 ]
 
 /**
