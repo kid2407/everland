@@ -110,6 +110,7 @@ const PROGRAM_DATA = {
             {time: "01:00", type: "dj", name: "Db", genre: "House"}
         ],
         [STAGES.BUTTERFLY_GARDEN]:     [
+            {time: "17:00", type: "dj", name: "(Bohne Frei?)", genre: "Rock/Metal"},
             {time: "19:00", type: "dj", name: "Skully n Bone", genre: "Hardtechno"},
             {time: "20:30", type: "dj", name: "DJ Obscura", genre: "???"},
             {time: "22:00", type: "dj", name: "Emotional Damage", genre: "Punkrock"},
