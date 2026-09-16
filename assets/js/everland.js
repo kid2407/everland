@@ -169,7 +169,7 @@ const PROGRAM_DATA = {
         ],
         [STAGES.BUTTERFLY_GARDEN]:     [
             {time: "12:00", type: "dj", name: "Open DJ-Pult", genre: "Unendliche Möglichkeiten"},
-            {time: "14:00", type: "dj", name: "DJ Street", genre: "Mittelalter- & Nordic Viking Rock"},
+            {time: "14:00", type: "dj", name: "DJ Street", genre: "???"},
             {time: "16:00", type: "dj", name: "Zoria", genre: "???"},
             {time: "19:30", type: "dj", name: "DJ Xavi", genre: "Latin"},
             {time: "20:30", type: "dj", name: "Mo", genre: "HipHop"},
