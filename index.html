@@ -341,48 +341,14 @@
         <div class="page-hero"><p class="eyebrow" style="justify-content:center;color:var(--gold-light);">Festival-Guide</p>
             <h1>Lageplan</h1>
             <p>Finde dich auf der Insel zurecht, bevor du überhaupt angekommen bist.</p>
-            <p>Bald auch mit echten Karten!</p>
         </div>
-        <!--        <section>-->
-        <!--            <div class="wrap">-->
-        <!--                <p>Bald gibt es hier mehr zu sehen. Doch noch herrscht hier eine Leere, die gefüllt werden will.</p>-->
-        <!--                <div class="map-wrap">-->
-        <!--                    <div class="map-svg-holder reveal">-->
-        <!--                        <svg viewBox="0 0 400 320" width="100%">-->
-        <!--                            <path d="M60,120 C40,80 100,40 170,45 C240,30 320,60 340,120 C360,180 320,240 250,260 C180,290 100,270 70,220 C40,190 40,150 60,120 Z" fill="#e9d9a6" stroke="#c79a4b"-->
-        <!--                                  stroke-width="3"/>-->
-        <!--                            <circle cx="200" cy="150" r="16" fill="#c15577"/>-->
-        <!--                            <text x="200" y="180" text-anchor="middle" fill="#1f2b1e" font-size="11" font-family="Georgia">1 Hauptbühne</text>-->
-        <!--                            <circle cx="130" cy="200" r="12" fill="#334a30"/>-->
-        <!--                            <text x="130" y="222" text-anchor="middle" fill="#1f2b1e" font-size="11" font-family="Georgia">2 Camping</text>-->
-        <!--                            <circle cx="270" cy="200" r="12" fill="#432c5e"/>-->
-        <!--                            <text x="270" y="222" text-anchor="middle" fill="#1f2b1e" font-size="11" font-family="Georgia">3 Marktplatz</text>-->
-        <!--                            <circle cx="90" cy="130" r="12" fill="#c79a4b"/>-->
-        <!--                            <text x="80" y="112" text-anchor="middle" fill="#1f2b1e" font-size="11" font-family="Georgia">4 Fähranleger</text>-->
-        <!--                            <circle cx="250" cy="110" r="12" fill="#8a6742"/>-->
-        <!--                            <text x="260" y="92" text-anchor="middle" fill="#1f2b1e" font-size="11" font-family="Georgia">5 Chill-Area</text>-->
-        <!--                        </svg>-->
-        <!--                    </div>-->
-        <!--                    <ul class="map-legend reveal" style="list-style:none;padding:0;">-->
-        <!--                        <li><span class="dot" style="background:#c15577;"></span>-->
-        <!--                            <div><strong>1 · Hauptbühne</strong><br>Zentrum des Festivals mit dem größten Sound- &amp; Lichtsystem.</div>-->
-        <!--                        </li>-->
-        <!--                        <li><span class="dot" style="background:#334a30;"></span>-->
-        <!--                            <div><strong>2 · Camping</strong><br>Zeltflächen, „Die Nuss"-Unterkünfte und Sanitärbereiche.</div>-->
-        <!--                        </li>-->
-        <!--                        <li><span class="dot" style="background:#432c5e;"></span>-->
-        <!--                            <div><strong>3 · Marktplatz</strong><br>Essensstände, Merch und kleine Bühnen.</div>-->
-        <!--                        </li>-->
-        <!--                        <li><span class="dot" style="background:#c79a4b;"></span>-->
-        <!--                            <div><strong>4 · Fähranleger</strong><br>Ankunft und Abfahrt der Boote von/nach Paleto.</div>-->
-        <!--                        </li>-->
-        <!--                        <li><span class="dot" style="background:#8a6742;"></span>-->
-        <!--                            <div><strong>5 · Chill-Area</strong><br>Ruhiger Rückzugsort abseits der Hauptbühne.</div>-->
-        <!--                        </li>-->
-        <!--                    </ul>-->
-        <!--                </div>-->
-        <!--            </div>-->
-        <!--        </section>-->
+        <section>
+            <div class="wrap">
+                <div class="map-wrap">
+                    <img src="/everland/assets/img/map.png">
+                </div>
+            </div>
+        </section>
     </section>
 
     <!-- ================= ANREISE ================= -->
@@ -552,13 +518,12 @@
         </div>
         <section class="dark-section" style="padding-top:70px;">
             <div class="wrap" id="artistTimetable">
-                <!--                <div class="day-tabs" role="tablist" aria-label="Festivaltage">-->
-                <!--                    <button class="day-tab" data-day="Freitag">Freitag 18.09.</button>-->
-                <!--                    <button class="day-tab" data-day="Samstag">Samstag 19.09.</button>-->
-                <!--                    <button class="day-tab" data-day="Sonntag">Sonntag 20.09.</button>-->
-                <!--                </div>-->
-                <div class="stage-grid" id="stageGrid" style="display: none"></div>
-                <p style="text-align: center">Noch gibt es hier nichts zu sehen, aber der Timetable wächst und gedeiht,<br>füllt sich mit Magie und dem gewissen Etwas, das Everland ausmacht.</p>
+                <div class="day-tabs" role="tablist" aria-label="Festivaltage">
+                    <button class="day-tab" data-day="Freitag">Freitag 18.09.</button>
+                    <button class="day-tab" data-day="Samstag">Samstag 19.09.</button>
+                    <button class="day-tab" data-day="Sonntag">Sonntag 20.09.</button>
+                </div>
+                <div class="stage-grid" id="stageGrid"></div>
             </div>
         </section>
     </section>
@@ -601,13 +566,12 @@
         </div>
         <section class="dark-section" style="padding-top:70px;">
             <div class="wrap" id="activityTimetable">
-                <!--                <div class="day-tabs" role="tablist" aria-label="Festivaltage">-->
-                <!--                    <button class="day-tab" data-day="Freitag">Freitag 18.09.</button>-->
-                <!--                    <button class="day-tab" data-day="Samstag">Samstag 19.09.</button>-->
-                <!--                    <button class="day-tab" data-day="Sonntag">Sonntag 20.09.</button>-->
-                <!--                </div>-->
-                <div class="stage-grid" id="activityGrid" style="display: none"></div>
-                <p style="text-align: center">Noch gibt es hier nichts zu sehen, aber die Activities versammeln sich<br>bringen euch Magie und das gewisse Etwas, das Everland ausmacht.</p>
+                <div class="day-tabs" role="tablist" aria-label="Festivaltage">
+                    <button class="day-tab" data-day="Freitag">Freitag 18.09.</button>
+                    <button class="day-tab" data-day="Samstag">Samstag 19.09.</button>
+                    <button class="day-tab" data-day="Sonntag">Sonntag 20.09.</button>
+                </div>
+                <div class="stage-grid" id="activityGrid"></div>
             </div>
         </section>
     </section>
