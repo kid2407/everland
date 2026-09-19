@@ -141,7 +141,7 @@ const PROGRAM_DATA = {
             {time: "15:00", type: "live", name: "Millie", genre: "Soul"},
             {time: "16:00", type: "live", name: "404UNK & Friends", genre: "Rap"},
             {time: "16:30", type: "live", name: "Chay Latte", genre: "Gesang / Pop"},
-            {time: "17:00", type: "live", name: "Blanche", genre: "Pop, Folk"},
+            {time: "17:00", type: "live", name: "DJ Silva Surfer", genre: "EDm / Techno"},
             {time: "18:00", type: "live", name: "Dave P", genre: "Rap, Pop"},
             {time: "18:30", type: "live", name: "Keira Maguire", genre: "Pop, Folk"},
             {time: "19:00", type: "live", name: "TheRealRJ", genre: "Rap / HipHop / Pop"},
